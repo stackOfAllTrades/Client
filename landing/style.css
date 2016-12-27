@@ -1,0 +1,23 @@
+.background {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: inset 0 0 1em #111;
+}
+
+#denver {
+  background-image: url(./denver-skyline.jpg);
+}
+
+#nightlife {
+  background-image: url(./nightlife.jpg)
+}
+
+#tech {
+  background-image: url(./expo.jpg);
+}
+
+#outdoors {
+  background-image: url(./montaña.jpg);
+}
