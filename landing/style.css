@@ -1,3 +1,13 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  margin-top: 0px;
+  padding: 0px;
+}
+
 .background {
   height: 100vh;
   background-attachment: fixed;
@@ -8,6 +18,7 @@
 
 #denver {
   background-image: url(./denver-skyline.jpg);
+  margin: 0px;
 }
 
 #nightlife {
