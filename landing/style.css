@@ -44,35 +44,39 @@ main {
 
 .skip {
   position: absolute;
-  left: 46vw;
-  bottom: 2.9vw;
+  left: 5vw;
+  bottom: 3.5vw;
   height: 0.6em;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: white;
   text-shadow: 2px 2px 2px black;
   text-decoration: none;
-  font-family: Arkhip;
-  background-color: #08247a;
+  font-family: Arial;
+  background-color: #f07028;
   text-align: center;
   padding: 1%;
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
+  border-radius: 20%;
+  padding-bottom: 2%;
+  opacity: 0.9;
+  box-shadow: 3px 3px 3px black;
 }
 
 .scroll {
   position: absolute;
   color: white;
   text-shadow: 2px 2px 2px black;
-  bottom: 0;
-  left: 33vw;
-  font-size: 2em;
-  font-family: Arkhip;
+  bottom:3.5vw;
+  right: 5vw;
+  font-size: 1.4em;
+  font-family: Arial;
   margin: 0px;
-  background-color: #f07028;
+  background-color: #08247a;
   height: 0.6em;
   padding: 1%;
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
+  border-radius: 20%;
+  padding-bottom: 2%;
+  box-shadow: 3px 3px 3px black;
+  opacity: 0.9
 }
 
 #denver {
@@ -120,13 +124,14 @@ main {
 .text-box {
   width: 60%;
   height: 60%;
-  background-color: white;
-  opacity: 0.8;
+  background: url(./whiteBack.jpg);
+  /*opacity: 0.8;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Arkhip;
+  font-family: Arial;
+  opacity: 0.9
 }
 
 #blurb1 {
@@ -139,19 +144,19 @@ main {
 
 #blurb1 p {
   -webkit-transform: skewX(20deg);
-  background-color: white;
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0px;
   width: 70%;
   position: absolute;
   left: 0px;
   margin-left: 20%;
+  text-align: left;
 }
 
 #blurb2 {
   border-radius: 20%;
   box-shadow: 3px 3px 4px black;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
   padding: 2%;
 }
@@ -162,7 +167,7 @@ main {
   right: -10%;
   box-shadow: 3px 3px 4px black;
   margin-top: 10%;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 #blurb3 p {
@@ -197,9 +202,13 @@ footer {
   margin-top: 0px;
 }
 
+.footer-logo {
+  height: 5em;
+  width: auto;
+}
+
 footer p {
-  font-family: Arkhip;
-  font-size: 2em;
+  font-family: Arial;
   color: white;
   text-shadow: 2px 2px 2px black;
   margin-right: 8%;
