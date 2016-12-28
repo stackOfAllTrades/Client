@@ -1,0 +1,163 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  background-image: url(./skyline.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  width: 105%;
+  height: 18vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.94;
+  margin-left: -4%;
+}
+
+.nav-tab {
+  width: 15vw;
+  height: 100%;
+  -webkit-transform: skewX(-20deg);
+  background: -webkit-linear-gradient(black, #08247a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linky {
+  text-decoration: none;
+  color: white;
+  font-size: 1.22em;
+  text-shadow: 2px 2px 2px black;
+}
+
+.nav-tab h4 {
+  -webkit-transform: skewX(20deg);
+  font-family: Arial;
+}
+
+.title-hold {
+  background: -webkit-linear-gradient(black, #08247a);
+  position: relative;
+  right: -2%;
+  height: 10vh;
+  width: 35%;
+  -webkit-transform: skewX(-20deg);
+  overflow: hidden;
+}
+
+.title {
+  font-family: firsttest;
+  margin: 0px;
+  text-align: center;
+  font-size: 3.5em;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  margin: auto;
+  margin-top: 1%;
+}
+
+#orange-backlit {
+  color: #f07028;
+}
+
+#blue-backlit {
+  color: #08247a;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-hold {
+  background-color: #f07028;
+  width: 40%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15vh;
+  opacity: 0.9;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  box-shadow: 2px 2px 3px #2a2b2a;
+}
+
+.boxes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 6%;
+}
+
+button {
+  font-size: 1.5em;
+  margin-left: 1.7em;
+  font-family: Arial;
+  border-radius: 10%;
+  background-color: #08247a;
+  border-top: none;
+  border-left: none;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  box-shadow: 2px 2px 2px black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+input {
+  width: 100%;
+  height: 4vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 2em;
+  font-family: Arial;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  font-color: black;
+  box-shadow: 2px 2px 2px black;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: -webkit-linear-gradient(#08247a, black);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5%;
+  margin-top: 0px;
+}
+
+.footer-logo {
+  height: 5em;
+  width: auto;
+}
+
+footer p {
+  font-family: Arial;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  margin-right: 8%;
+  margin-left: 8%;
+}
