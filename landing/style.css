@@ -18,7 +18,15 @@ main {
   box-shadow: inset 0 0 1em #111;
 }
 
-.title {
+#title1 {
+  font-family: firsttest;
+  text-align: center;
+  font-size: 4em;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+#title2 {
   font-family: firsttest;
   text-align: center;
   font-size: 4em;
@@ -159,4 +167,18 @@ main {
   width: 70%;
   text-align: right;
   margin-right: 8%;
+}
+
+.slideInLeft {
+  -vendor-animation-duration: 0.75s;
+}
+
+.slideInRight {
+  -animation-duration: 0.75s;
+  -animation-delay: 1s;
+}
+
+.fadeIn {
+  -animation-duration: 1s;
+  -animation-delay: 1.75s;
 }
