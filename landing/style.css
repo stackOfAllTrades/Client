@@ -44,13 +44,14 @@ main {
 
 .skip {
   position: absolute;
-  left: 42vw;
-  bottom: 5vw;
-  font-size: 3em;
+  left: 46vw;
+  bottom: 2.9vw;
+  height: 0.6em;
+  font-size: 1.8em;
   color: white;
-  text-shadow: 2px 2px 2px #08247a;
+  text-shadow: 2px 2px 2px black;
   text-decoration: none;
-  font-family: firsttest;
+  font-family: Arkhip;
   background-color: #08247a;
   text-align: center;
   padding: 1%;
@@ -61,13 +62,14 @@ main {
 .scroll {
   position: absolute;
   color: white;
-  text-shadow: 2px 2px 2px #08247a;
+  text-shadow: 2px 2px 2px black;
   bottom: 0;
-  left: 30vw;
-  font-size: 3.5em;
-  font-family: firsttest;
+  left: 33vw;
+  font-size: 2em;
+  font-family: Arkhip;
   margin: 0px;
   background-color: #f07028;
+  height: 0.6em;
   padding: 1%;
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
@@ -96,6 +98,7 @@ main {
 
 #outdoors {
   background-image: url(./montaña.jpg);
+  margin-bottom: 0px;
 }
 
 .logo-hold {
@@ -181,4 +184,24 @@ main {
 .fadeIn {
   -animation-duration: 1s;
   -animation-delay: 1.75s;
+}
+
+footer {
+  width: 100%;
+  background: -webkit-linear-gradient(#08247a, black);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5%;
+  margin-top: 0px;
+}
+
+footer p {
+  font-family: Arkhip;
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  margin-right: 8%;
+  margin-left: 8%;
 }
