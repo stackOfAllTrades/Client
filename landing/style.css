@@ -1,6 +1,8 @@
 body {
   margin: 0px;
   padding: 0px;
+  width: 100%;
+  height: auto;
 }
 
 main {
@@ -14,15 +16,62 @@ main {
   background-position: center center;
   background-size: cover;
   box-shadow: inset 0 0 1em #111;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+.title {
+  font-family: firsttest;
+  text-align: center;
+  font-size: 4em;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+#orange-backlit {
+  color: #f07028;
+}
+
+#blue-backlit {
+  color: #08247a;
+}
+
+.skip {
+  position: absolute;
+  left: 42vw;
+  bottom: 5vw;
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 2px #08247a;
+  text-decoration: none;
+  font-family: firsttest;
+  background-color: #08247a;
+  text-align: center;
+  padding: 1%;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+}
+
+.scroll {
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px 2px #08247a;
+  bottom: 0;
+  left: 30vw;
+  font-size: 3.5em;
+  font-family: firsttest;
+  margin: 0px;
+  background-color: #f07028;
+  padding: 1%;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
 }
 
 #denver {
   background-image: url(./denver-skyline.jpg);
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #nightlife {
@@ -31,38 +80,54 @@ main {
 
 #tech {
   background-image: url(./expo.jpg);
-}
-
-#outdoors {
-  background-image: url(./montaña.jpg);
-}
-
-.logo {
-  width: 30vw;
-  height: 30vw;
-  opacity: 0.95;
-  attachment: fixed;
-}
-
-.text-box {
-  width: 60%;
-  height: 60%;
-  background-color: white;
-  opacity: 0.7;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+#outdoors {
+  background-image: url(./montaña.jpg);
+}
+
+.logo-hold {
+  width: 100%;
+  height: 8vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 30vw;
+  height: 30vw;
+  margin: 2%;
+}
+
+.text-box {
+  width: 60%;
+  height: 60%;
+  background-color: white;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arkhip;
+}
+
 #blurb1 {
-  -webkit-transform:skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
   position: absolute;
   left: -10%;
+  box-shadow: 3px 3px 4px black;
+  margin-top: 10%;
 }
 
 #blurb1 p {
-  -webkit-transform:skewX(20deg);
+  -webkit-transform: skewX(20deg);
   background-color: white;
   font-size: 2em;
   margin: 0px;
@@ -70,4 +135,28 @@ main {
   position: absolute;
   left: 0px;
   margin-left: 20%;
+}
+
+#blurb2 {
+  border-radius: 20%;
+  box-shadow: 3px 3px 4px black;
+  font-size: 2em;
+  text-align: center;
+  padding: 2%;
+}
+
+#blurb3 {
+  -webkit-transform: skewX(20deg);
+  position: absolute;
+  right: -10%;
+  box-shadow: 3px 3px 4px black;
+  margin-top: 10%;
+  font-size: 2em;
+}
+
+#blurb3 p {
+  -webkit-transform: skewX(-20deg);
+  width: 70%;
+  text-align: right;
+  margin-right: 8%;
 }
