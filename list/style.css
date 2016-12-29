@@ -73,7 +73,46 @@ header {
   color: #08247a;
 }
 
+main {
+  width: 100%;
+  margin-top: 8.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+.column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  width: 90%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  margin-top: 3%;
+  padding-left: 2%;
+}
+
+.hold-this {
+  color: white;
+  font-family: Arial;
+}
+
+.hold-this p {
+  margin: 1%;
+  text-shadow: 2px 2px 2px black;
+}
+
+.description {
+  color: #f07028
+}
+
+.location {
+  color: #08247a;
+}
 
 footer {
   position: absolute;
