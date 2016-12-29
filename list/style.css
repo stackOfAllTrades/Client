@@ -75,7 +75,7 @@ header {
 
 main {
   width: 100%;
-  margin-top: 8.5%;
+  margin-top: 7%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -94,6 +94,11 @@ main {
   background-color: rgba(0, 0, 0, 0.85);
   margin-top: 3%;
   padding-left: 2%;
+}
+
+h3 {
+  font-size: 1.4em;
+  text-decoration: underline;
 }
 
 .hold-this {
