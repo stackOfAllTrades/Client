@@ -22,9 +22,9 @@
 
     </header>
 
-    <main>
+    <div class="main1">
 
-      <h2 class="info"><span id="orange-backlit">Choose</span> an <span id="blue-backlit">Interest</span></h2>
+      <h2 class="info"><span id="orange-backlit">Choose</span> your <span id="blue-backlit">Interests</span></h2>
 
       <div class="card-row">
         <div class="card">
@@ -71,7 +71,30 @@
         </div>
       </div>
 
-    </main>
+      <div class="scroll-hold">
+        <h1><span id="orange-bold">↓</span></h1>
+        <h6 class="scroll">Scroll down to complete your<br/>registration</h6>
+        <h1><span id="blue-bold">↓</h1>
+      </div>
+
+    </div>
+    <div class="main2">
+      <div class="form-hold">
+        <form class="user-info">
+          <div class="basic-info">
+            <input class="name" id="f-name" placeholder="First Name" value=""/>
+            <input class="name" id="l-name" placeholder="Last Name" value=""/>
+            <input type="email" class="name" placeholder="email" value=""/>
+          </div>
+          <div class="upload">
+            <label for="upload">Upload Profile Picture</label>
+            <input name="upload" type="file" class="member-photo" id="photo" value=""/>
+          </div>
+          <textarea class="blurb" id="blurb" placeholder="Take some time to tell us about yourself"></textarea>
+          <button type="submit" class="sub-form">Submit</button>
+        </form>
+      </div>
+    </div>
 
     <footer>
         <p>An App by Stack of All Trades</p>
