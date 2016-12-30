@@ -75,6 +75,7 @@ header {
 
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10%;
@@ -92,7 +93,6 @@ main {
   opacity: 0.9;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
-  box-shadow: 2px 2px 3px #2a2b2a;
 }
 
 .boxes {
@@ -111,7 +111,6 @@ main {
 
 button {
   font-size: 1.5em;
-  margin-left: 1.7em;
   font-family: Arial;
   border-radius: 10%;
   background-color: #08247a;
@@ -119,7 +118,6 @@ button {
   border-left: none;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
-  box-shadow: 2px 2px 2px black;
   color: white;
   text-shadow: 1px 1px 1px black;
 }
@@ -134,8 +132,15 @@ input {
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   font-color: black;
-  box-shadow: 2px 2px 2px black;
   text-align: center;
+}
+
+.no-member {
+  width: 40vw;
+  margin-top: 7%;
+  font-size: 2em;
+  background: -webkit-linear-gradient(left, #f07028, #08247a);
+  border: 1px solid black;
 }
 
 footer {
