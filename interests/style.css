@@ -210,13 +210,16 @@ header {
 .name {
   width: 100%;
   height: 5vh;
-  margin: 3%;;
+  margin: 3%;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .upload {
   width: 70%;
   font-size: 2em;
-  border: 10px groove white;
+  border: 7px groove white;
+  background: -webkit-linear-gradient(left, #08247a, #f07028);
   margin-left: 10%;
   display: flex;
   flex-direction: row;
@@ -227,6 +230,8 @@ header {
 }
 
 .blurb {
+  margin-top: 3%;
+  margin-bottom: 0px;
   width: 75%;
   height: 15vh;
   font-size: 1.3em;
@@ -237,7 +242,6 @@ header {
   width: 40vw;
   font-size: 1.4em;
   background: -webkit-linear-gradient(left, #f07028, #08247a);
-  margin-top: 2%;
   border-radius: 10%;
   color: white;
   text-shadow: 1px 1px 1px black;
