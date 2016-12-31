@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url(./coors.jpg);
+  background-image: url(./fillmore.jpg);
 }
 
 header {
@@ -73,7 +73,46 @@ header {
   color: #08247a;
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+.column {
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 60vh;
+  width: 45vw;
+  color: white;
+  margin-top: 11%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial;
+}
+
+.column-title {
+  width: 90%;
+  text-align: center;
+  font-size: 2.2em;
+  padding: 1%;
+  text-shadow: 2px 2px 2px black;
+}
+
+#flagged-title {
+  background: -webkit-linear-gradient(left, #f07028, #08247a);
+}
+
+#attended-title {
+  background: -webkit-linear-gradient(left, #08247a, #f07028);
+}
+
+.event {
+  font-size: 1.4em;
+  margin-top: 2%;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+}
 
 footer {
   position: absolute;
