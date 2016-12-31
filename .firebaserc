@@ -2,6 +2,7 @@
   "projects": {
     "default": "denver-to-remember",
     "dtor": "a-denver-to-remember",
-    "firebase deploy": "a-denver-to-remember"
+    "firebase deploy": "a-denver-to-remember",
+    ".": "a-denver-to-remember"
   }
 }
