@@ -55,10 +55,10 @@ header {
   width: 100%;
   text-decoration: none;
   color: white;
-  /*background-color: rgba(0, 162, 254, 0.6);*/
   background-color: rgba(240, 112, 40, 0.6);
   font-size: 1.2em;
   border: 0.1em solid rgb(62, 28, 9);
+  box-shadow: 2px 2px 2px black;
 }
 
 
@@ -67,7 +67,7 @@ header {
   height: 9.6vh;
   width: 45%;
   -webkit-transform: skewX(-20deg);
-  box-shadow: inset 0 0 1em black;
+  /*box-shadow: inset 0 0 1em black;*/
 }
 
 .title {
@@ -191,7 +191,6 @@ footer {
 footer p {
   font-family: Arial;
   color: white;
-  /*text-shadow: 2px 2px 2px black;*/
   margin-right: 8%;
   margin-left: 8%;
 }
