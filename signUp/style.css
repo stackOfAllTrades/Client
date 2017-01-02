@@ -30,7 +30,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0.05em;
 }
 
 .linky {
@@ -86,7 +85,7 @@ header {
 }
 
 .main1 {
-    background-image: url(./denver-background.jpg);
+    background-image: url(./horse.jpg);
     height: 100vh;
     background-attachment: fixed;
     background-position: center center;
@@ -193,7 +192,7 @@ header {
 }
 
 .main2 {
-    background-image: url(./horse.jpg);
+    background-image: url(./denver-background.jpg);
     height: 100vh;
     background-attachment: fixed;
     background-position: center center;

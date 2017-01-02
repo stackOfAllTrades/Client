@@ -118,7 +118,6 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 6%;
 }
 
 button {
@@ -129,6 +128,11 @@ button {
   color: white;
   text-shadow: 1px 1px 1px black;
   border: none;
+  margin-top: 6%;
+}
+
+.buttons a {
+  margin-top: 6%;
 }
 
 button:hover {
@@ -165,6 +169,7 @@ input {
 
 .no-member:hover {
   font-size: 2.5em;
+  margin-top: 12%;
   background-color: rgba(8, 36, 122, 0.85);
 }
 
