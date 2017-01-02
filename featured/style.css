@@ -12,7 +12,7 @@ body {
 
 header {
   position: absolute;
-  right: -1%;
+  right: -3%;
   width: 100%;
   height: 18vh;
   display: flex;
@@ -22,7 +22,7 @@ header {
 }
 
 .nav-tab {
-  box-shadow: inset 0 0 1em black;
+  border-right: 1px solid rgb(8, 36, 122);
   width: 15vw;
   height: 100%;
   -webkit-transform: skewX(-20deg);
@@ -55,19 +55,16 @@ header {
   width: 100%;
   text-decoration: none;
   color: white;
-  background-color: rgba(240, 112, 40, 0.6);
+  background-color: rgba(240, 112, 40, 0.8);
   font-size: 1.2em;
-  border: 0.1em solid rgb(62, 28, 9);
   box-shadow: 2px 2px 2px black;
 }
-
 
 .title-hold {
   background-color: rgba(8, 36, 122, 0.80);
   height: 9.6vh;
   width: 45%;
   -webkit-transform: skewX(-20deg);
-  /*box-shadow: inset 0 0 1em black;*/
 }
 
 .title {
@@ -109,7 +106,7 @@ main {
 
 .featured-title {
   margin-left: 33vw;
-  margin-top: 9%;
+  margin-top: 8%;
   color: white;
   font-size: 3em;
   font-family: Arial;
@@ -119,7 +116,7 @@ main {
 .img-hold {
   width: 68vw;
   height: 20vh;
-  margin-bottom: 15%;
+  margin-bottom: 16%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -135,7 +132,7 @@ main {
 
 .text-box {
   width: 35vw;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 .blurb-header {
