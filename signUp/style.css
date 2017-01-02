@@ -131,14 +131,16 @@ header {
   margin-left: 4%;
   margin-right: 4%;
   box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.9);
+  border: 0.1em solid black;
 }
 
 .card:hover {
   background-color: rgba(240, 112, 40, 0.85);
-  margin: 1%;
+  margin: 1.1%;
   height: 18vh;
   width: 18vw;
-  box-shadow: 3px 3px 3px black;
+  box-shadow: 2px 2px 2px black;
+  border: none;
 }
 
 .card-img {
@@ -214,6 +216,7 @@ header {
   background-color: rgba(0, 0, 0, 0.85);
   font-family: Arial;
   color: white;
+  border: 0.1em solid black;
 }
 
 .basic-info {
