@@ -90,6 +90,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-family: Arial;
 }
 
 .column {
@@ -129,8 +130,12 @@ h3 {
   color: #f07028;
 }
 
-.location {
+.date {
   color: #08247a;
+}
+
+.hidden {
+  display: none;
 }
 
 .big-div {
@@ -142,7 +147,7 @@ h3 {
   right: 14%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -157,11 +162,14 @@ h3 {
 .big-title {
   font-size: 4em;
   text-align: center;
+  font-family: Arial;
 }
 
-.big-location {
-  font-size: 2.5em;
+.big-date {
+  font-size: 2em;
   text-align: center;
+  font-family: Arial;
+  color: rgb(8, 36, 122);
 }
 
 .big-description {
