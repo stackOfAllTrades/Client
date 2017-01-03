@@ -93,6 +93,15 @@ main {
   font-family: Arial;
 }
 
+.main2 {
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: Arial;
+}
+
 .column {
   width: 40%;
   display: flex;
@@ -170,6 +179,7 @@ h3 {
   text-align: center;
   font-family: Arial;
   color: rgb(8, 36, 122);
+  text-shadow: 1px 1px 1px black;
 }
 
 .big-description {
