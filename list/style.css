@@ -12,11 +12,7 @@ body {
 
 header {
   position: absolute;
-<<<<<<< HEAD
   right: -3%;
-=======
-  right: -1%;
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a
   width: 100%;
   height: 18vh;
   display: flex;
@@ -29,24 +25,15 @@ header {
   width: 15vw;
   height: 100%;
   -webkit-transform: skewX(-20deg);
-<<<<<<< HEAD
   background: rgba(8, 36, 122, 0.8);
-=======
-  background: rgb(8, 36, 122);
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-=======
-  background-color: rgba(8, 36, 122, 0.80);
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a
 }
 
 .linky {
   text-decoration: none;
-<<<<<<< HEAD
 }
 
 .nav-tab h4 {
@@ -55,16 +42,11 @@ header {
   text-decoration: none;
   color: white;
   font-size: 1.22em;
-=======
-  color: white;
-  font-size: 1.22em;
   text-shadow: 2px 2px 2px black;
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a
   margin-left: 1%;
   margin-right: 1%;
 }
 
-<<<<<<< HEAD
 .nav-tab:hover {
   -webkit-transform: skewX(-20deg);
   font-family: Arial;
@@ -80,16 +62,11 @@ header {
 .title-hold {
   background-color: rgba(8, 36, 122, 0.8);
   height: 9.6vh;
-=======
-.nav-tab h4 {
-  -webkit-transform: skewX(20deg);
-  font-family: Arial;
 }
 
 .title-hold {
   background-color: rgba(8, 36, 122, 0.80);
   height: 10vh;
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a
   width: 45%;
   -webkit-transform: skewX(-20deg);
 }
@@ -115,27 +92,11 @@ header {
 
 main {
   width: 100%;
-<<<<<<< HEAD
   margin-top: 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   font-family: Arial;
-}
-
-.main2 {
-  width: 100%;
-  margin-top: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-family: Arial;
-=======
-  margin-top: 7%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a
 }
 
 .column {
@@ -151,21 +112,15 @@ main {
   background-color: rgba(0, 0, 0, 0.85);
   margin-top: 3%;
   padding-left: 2%;
-<<<<<<< HEAD
   text-align: center;
   box-shadow: inset 0 0 2em black;
   border: 0.1em solid black;
-=======
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a
 }
 
 h3 {
   font-size: 1.4em;
-<<<<<<< HEAD
   color: #f07028;
-=======
   text-decoration: underline;
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a
 }
 
 .hold-this {
@@ -179,7 +134,6 @@ h3 {
 }
 
 .description {
-<<<<<<< HEAD
   color: #f07028;
 }
 
@@ -240,30 +194,19 @@ h3 {
   height: 0px;
 }
 
-footer {
-  width: 100%;
-  background-color: rgba(8, 36, 122, 0.85);
-=======
-  color: #f07028
-}
-
 .location {
   color: #08247a;
 }
 
 footer {
-  position: absolute;
-  bottom: 0px;
   width: 100%;
   background-color: rgba(8, 36, 122, 0.80);
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0.5%;
   margin-top: 0px;
-<<<<<<< HEAD
   height: 3em;
   position: absolute;
   bottom: 0%;
@@ -275,23 +218,12 @@ footer {
   width: auto;
   border-radius: 50%;
   box-shadow: inset 0 0 1em black;
-=======
 }
 
-.footer-logo {
-  height: 5em;
-  width: auto;
-  margin-right: 4%;
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a
-}
 
 footer p {
   font-family: Arial;
   color: white;
-<<<<<<< HEAD
-=======
-  text-shadow: 2px 2px 2px black;
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a
   margin-right: 8%;
   margin-left: 8%;
 }
