@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Interests</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.js"
+      integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <header>
+
+      <a class="linky" href="../index.html"><div class="nav-tab" id="home"><h4>Home</h4></div></a>
+      <a class="linky" href="../profile/index.html"><div class="nav-tab" id="profile"><h4>Profile</h4></div></a>
+      <a class="linky" href="../interests/index.html"><div class="nav-tab" id="list"><h4>Events</h4></div></a>
+      <a class="linky" href="../schedule/index.html"><div class="nav-tab" id="favorites"><h4>Schedule</h4></div></a>
+      <div class="title-hold"><h1 class="title">A <span id="orange-backlit">Denver</span> to <span id="blue-backlit">Remember</span></h1></div>
+
+    </header>
+
+    <div class="main1">
+
+      <h2 class="info">First, choose your interests from the list below:</h2>
+
+      <div class="card-row">
+        <div class="card">
+          <img class="card-img" src="nightlife.jpg"/>
+          <h3 class="interest-title">Nightlife</h3>
+        </div>
+        <div class="card">
+          <img class="card-img" src="music.jpg"/>
+          <h3 class="interest-title">Shows/Concerts</h3>
+        </div>
+        <div class="card">
+          <img class="card-img" src="sports.jpg"/>
+          <h3 class="interest-title">Sporting Events</h3>
+        </div>
+        <div class="card">
+          <img class="card-img" src="outdoor.jpg"/>
+          <h3 class="interest-title">Outdoor</h3>
+        </div>
+        <div class="card">
+          <img class="card-img" src="gaming.jpg"/>
+          <h3 class="interest-title">Gaming</h3>
+        </div>
+      </div>
+      <div class="card-row">
+        <div class="card">
+          <img class="card-img" src="tech.jpg"/>
+          <h3 class="interest-title">Technology</h3>
+        </div>
+        <div class="card">
+          <img class="card-img" src="business.jpg"/>
+          <h3 class="interest-title">Business/Finance</h3>
+        </div>
+        <div class="card">
+          <img class="card-img" src="market.jpeg"/>
+          <h3 class="interest-title">Markets</h3>
+        </div>
+        <div class="card">
+          <img class="card-img" src="foodie.png"/>
+          <h3 class="interest-title">Foodies</h3>
+        </div>
+        <div class="card">
+          <img class="card-img" src="miscellaneous.png"/>
+          <h3 class="interest-title">Miscellaneous</h3>
+        </div>
+      </div>
+
+      <div class="scroll-hold">
+        <h6 class="scroll">Then scroll down to complete your registration</h6>
+      </div>
+
+    </div>
+    <div class="main2">
+      <div class="form-hold">
+        <form class="user-info">
+          <div class="basic-info">
+            <input class="name" id="f-name" placeholder="First Name" value=""/>
+            <input class="name" id="l-name" placeholder="Last Name" value=""/>
+            <input type="email" class="name" placeholder="Email" value=""/>
+          </div>
+          <div class="upload">
+            <label for="upload" id="upload-label">Upload Profile Picture</label>
+            <input name="upload" type="file" class="member-photo" id="photo" value=""/>
+          </div>
+          <textarea class="blurb" id="blurb" placeholder="Take some time to tell us about yourself"></textarea>
+        </form>
+        <a href="../profile/index.html"><button class="sub-form">Submit</button></a>
+      </div>
+    </div>
+
+    <footer>
+        <p>An App by Stack of All Trades</p>
+        <img class="footer-logo" src="Logo.svg"/>
+        <p>2016 All Rights Reserved</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
