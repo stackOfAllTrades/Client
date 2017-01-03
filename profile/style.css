@@ -3,7 +3,8 @@ body {
   padding: 0px;
   width: 100%;
   height: auto;
-  background-image: url(./skyline.jpg);
+  background-image: url(./background.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -68,7 +69,6 @@ header {
 
 .title {
   font-family: firsttest;
-  margin: 0px;
   text-align: center;
   font-size: 3.5em;
   color: white;
@@ -88,88 +88,110 @@ header {
 
 main {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 11%;
+}
+
+.side {
+  width: 20vw;
+  height: 65vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 2em black;
+}
+
+.info {
+  width: 45vw;
+  height: 65vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8%;
 }
 
-.form-hold {
-  background-color: rgba(0, 0, 0, 0.85);
-  width: 40%;
-  height: 30vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15vh;
-  box-shadow: inset 0 0 1em black;
-}
+.profile-pic {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  margin-bottom: 3%;
+  }
 
-.boxes {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-button {
-  font-size: 2em;
+.name {
+  margin-bottom: 4%;
   font-family: Arial;
+  color: rgba(8, 36, 122, 0.85);
+  font-size: 2.5em;
+  text-shadow: 2px 2px 2px black;
+}
+
+.blurb {
+  width: 90%;
+  text-align: center;
+  font-family: Arial;
+  color: white;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px black;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.schedule {
+  text-align: center;
+  width: 30%;
+  font-family: Arial;
+  color: white;
+  font-size: 2em;
+  text-shadow: 1px 1px 1px black;
   background-color: rgba(8, 36, 122, 0.85);
-  box-shadow: inset 0 0 1em black;
+  text-decoration: none;
+  margin-bottom: 6%;
+  margin-top: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+  box-shadow: inset 0 0 0.25em black;
+}
+
+.interest-header {
+  font-size: 2.2em;
+  font-family: Arial;
+  color: #f07028;
+  text-shadow: 1px 1px 1px black;
+}
+
+.interest {
+  font-size: 1.3em;
+  width: 90%;
+  font-family: Arial;
   color: white;
   text-shadow: 1px 1px 1px black;
-  border: none;
-  margin-top: 6%;
+  margin: 4%;
+  float: left;
+  margin-left: 25%;
 }
 
-.buttons a {
-  margin-top: 6%;
-}
-
-button:hover {
-  font-size: 2.5em;
-  background-color: rgba(240, 112, 40, 0.85);
-}
-
-input {
-  width: 100%;
-  height: 4vh;
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 2em;
+.badge-header {
+  font-size: 2.2em;
   font-family: Arial;
-  border: 0.01em solid black;
-  color: black;
-  text-align: center;
-  border: none;
-  box-shadow: inset 0 0 1em black;
+  color: #f07028;
   text-shadow: 1px 1px 1px black;
 }
 
-::-webkit-input-placeholder {
-  color: rgba(240, 112, 40, 0.65);
+.badges {
+  margin-right: 2em;
 }
 
-.no-member {
-  width: 30vw;
-  margin-top: 13%;
-  font-size: 2em;
-  background-color: rgba(240, 112, 40, 0.95);
-  box-shadow: inset 0 0 1em black;
-}
-
-.no-member:hover {
+.badge {
+  font-family: webdings;
   font-size: 2.5em;
-  margin-top: 12%;
-  background-color: rgba(8, 36, 122, 0.85);
+  margin: 10%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 footer {
@@ -182,8 +204,9 @@ footer {
   padding: 0.5%;
   margin-top: 0px;
   height: 3em;
-  position: absolute;
-  bottom: 0%;
+  position: fixed;
+  bottom: 0px;
+  box-shadow: inset 0 0 1em black;
 }
 
 .footer-logo {
