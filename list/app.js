@@ -30,14 +30,14 @@ $(document).ready(function(){
       var $description = $('<p class="big-description">' + data[thisId].description + '</p>');
       var $bigLink = $('<a class="big-link" href="' + data[thisId].eventLink + '">Click this link for further details</a>');
       var $main2 = $('<div class="main2"></div>');
-      $('main').remove();
-      $('body').append($main2);
-      $('.main2').append($bigDiv);
+      var $price = $('<p class="price">' + data[i].price + '</p>');
+      $('main').append($bigDiv);
       $($bigDiv).append($backLink);
       $($bigDiv).append($bigName);
       $($bigDiv).append($bigDate);
       $($bigDiv).append($description);
       $($bigDiv).append($bigLink);
+      $($bigDiv).append($price);
       });
     });
 });

@@ -137,19 +137,11 @@ main {
   opacity: 0.9;
   color: white;
   text-shadow: 1px 1px 1px black;
-<<<<<<< HEAD:style.css
   box-shadow: inset 0 0 2em black;
 }
 
 #blurb1 {
   background-color: rgba(240, 112, 40, 0.85);
-=======
-  box-shadow: inset 0 0 1em black;
-}
-
-#blurb1 {
-  background: linear-gradient(to right, rgba(8, 36, 122, 0.6), rgba(240, 112, 40, 1)), url(./whiteBack.jpg);
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a:style.css
   height: 40vh;
 }
 
@@ -163,11 +155,7 @@ main {
 }
 
 #blurb2 {
-<<<<<<< HEAD:style.css
   background-color: rgba(0, 0, 0, 0.85);
-=======
-  background: linear-gradient(to top, rgba(8, 36, 122, 0.6), rgba(240, 112, 40, 1)), url(./whiteBack.jpg);
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a:style.css
   font-size: 1.5em;
   text-align: center;
   padding: 2%;
@@ -179,11 +167,7 @@ main {
 }
 
 #blurb3 {
-<<<<<<< HEAD:style.css
   background-color: rgba(8, 36, 122, 0.85);
-=======
-  background: linear-gradient(to left, rgba(8, 36, 122, 0.6), rgba(240, 112, 40, 1)), url(./whiteBack.jpg);
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a:style.css
   font-size: 1.5em;
   height: 40vh;
 }
@@ -221,7 +205,6 @@ footer {
   padding: 0.5%;
   margin-top: 0px;
   height: 3em;
-<<<<<<< HEAD:style.css
   position: absolute;
   bottom: -300%;
 }
@@ -231,16 +214,6 @@ footer {
   height: 3.7em;
   width: auto;
   border-radius: 50%;
-=======
-  box-shadow: inset 0 0 1em black;
-}
-
-.footer-logo {
-  border-radius: 50%;
-  box-shadow: inset 0 0 1em black;
-  height: 3em;
-  width: auto;
->>>>>>> 70a60e2687c0b25826c9d0effdcae10cab82b68a:style.css
   box-shadow: inset 0 0 1em black;
 }
 
