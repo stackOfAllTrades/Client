@@ -3,7 +3,7 @@ $(document).ready(function(){
   var eventURL = 'https://stack-of-all-trade.herokuapp.com/events';
 
   $.get(eventURL, function(data){
-    for(var i = 8; i < 16; i++){
+    for(var i = 0; i < data.length; i++){
       var cardId = data[i].id;
       var $id = $('<p class="hidden">' + cardId + '</p>');
       var $card = $('<div class="card" + id="card' + (i+1) + '"></div>');
@@ -30,14 +30,15 @@ $(document).ready(function(){
       var $description = $('<p class="big-description">' + data[thisId].description + '</p>');
       var $bigLink = $('<a class="big-link" href="' + data[thisId].eventLink + '">Click this link for further details</a>');
       var $main2 = $('<div class="main2"></div>');
-      var $price = $('<p class="price">' + data[i].price + '</p>');
+      // var $price = $('<p class="price"></p>');
+
       $('main').append($bigDiv);
       $($bigDiv).append($backLink);
       $($bigDiv).append($bigName);
       $($bigDiv).append($bigDate);
       $($bigDiv).append($description);
       $($bigDiv).append($bigLink);
-      $($bigDiv).append($price);
+      // $($bigDiv).append($price);
       });
     });
 });

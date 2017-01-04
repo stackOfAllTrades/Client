@@ -66,7 +66,7 @@ header {
 
 .title-hold {
   background-color: rgba(8, 36, 122, 0.80);
-  height: 10vh;
+  height: 9.6vh;
   width: 45%;
   -webkit-transform: skewX(-20deg);
 }
@@ -91,6 +91,7 @@ header {
 }
 
 main {
+  margin-left: 1.5%;
   width: 100%;
   margin-top: 10%;
   display: flex;
@@ -100,10 +101,12 @@ main {
 }
 
 .column {
+  max-height: 70vh;
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: auto;
 }
 
 .card {
@@ -132,10 +135,6 @@ h3 {
   text-shadow: 2px 2px 2px black;
 }
 
-.description {
-  color: #f07028;
-}
-
 .date {
   color: #08247a;
 }
@@ -150,7 +149,7 @@ h3 {
   background-color: rgba(0, 0, 0, 0.85);
   position: absolute;
   bottom: 11.5%;
-  right: 14%;
+  ht: 14%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,7 +165,9 @@ h3 {
 }
 
 .big-title {
-  font-size: 4em;
+  margin: 0px;
+  margin-top: 2%;
+  font-size: 3.2em;
   text-align: center;
   font-family: Arial;
 }
@@ -181,10 +182,12 @@ h3 {
 
 .big-description {
   width: 70%;
+  max-height: 20%;
   text-align: center;
   font-family: Arial;
   color: white;
-  font-size: 1.7em;
+  font-size: 1.2em;
+  overflow: scroll;
 }
 
 .no-display {
