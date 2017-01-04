@@ -3,7 +3,7 @@ $(document).ready(function(){
   var eventURL = 'https://stack-of-all-trade.herokuapp.com/events';
 
   $.get(eventURL, function(data){
-    for(var i = 0; i < 8; i++){
+    for(var i = 8; i < 16; i++){
       var cardId = data[i].id;
       var $id = $('<p class="hidden">' + cardId + '</p>');
       var $card = $('<div class="card" + id="card' + (i+1) + '"></div>');
