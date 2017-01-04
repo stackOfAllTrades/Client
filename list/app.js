@@ -4,14 +4,99 @@ $(document).ready(function(){
 
   $.get(eventURL, function(data){
     for(var i = 0; i < data.length; i++){
-      var cardId = i;
-      var $id = $('<p class="hidden">' + cardId + '</p>');
+
+      //*Mark - Took away cardId and just used i
+      // var cardId = i;
+      var thisEvent = data[i];
+
+      //*Mark - Validating that the properties are populated
+      var sourceName = null;
+      if(thisEvent.date){
+      sourceName = thisEvent.sourceName;
+      }
+      else{
+      date = "Indeterminate Date";
+      }
+
+      var eventLink = null;
+      if(thisEvent.eventLink){
+        eventLink = thisEvent.eventLink;
+      } else {
+        eventLink = "No Link Available";
+      }
+
+      var description = null;
+      if(thisEvent.description) {
+        description = thisEvent.description;
+      }else{
+        description = "Description Unavailable"
+      }
+
+      var date = null;
+      if(thisEvent.date){
+        date = thisEvent.date;
+      }
+      else{
+        date = "Date: TBD";
+      }
+
+      var time = null;
+      if(thisEvent.time) {
+        time = thisEvent.time;
+      } else {
+        time = "Time: TBD"
+      }
+
+      var eventName = null;
+      if(thisEvent.eventName) {
+        eventName = thisEvent.eventName;
+      } else {
+        eventName = "Event is Unnamed"
+      }
+
+      var price = null;
+      if(thisEvent.price) {
+        price = thisEvent.price;
+      } else {
+        price = "Price: TBD"
+      }
+
+      var imageLink = null;
+      if (thisEvent.imageLink) {
+        imageLink = thisEvent.imageLink;
+      } else {
+        imageLink = "Image Unavailable"
+      }
+
+      var location = null;
+      if (thisEvent.location) {
+        location = thisEvent.location;
+      } else {
+        location = "Location: TBD"
+      }
+
+      var address = null;
+      if (thisEvent.address) {
+        address = thisEvent.address;
+      } else {
+        address = "Address: TBD"
+      }
+
+      var price = null;
+      if (thisEvent.address) {
+        price = thisEvent.price;
+      } else {
+        price = "Price: TBD"
+      }
+
+      var $id = $('<p class="hidden">' + i + '</p>');
       var $card = $('<div class="card" + id="card' + (i+1) + '"></div>');
-      if (cardId === 0) {
+      if (i === 0) {
         $card.attr('id', 'card1');
       }
-      var $h3 = $('<h3>' + data[i].eventName + '</h3>');
-      var $p = $('<p class="date">' + data[i].date + ' at ' + data[i].time + '</p>');
+
+      var $h3 = $('<h3>' + eventName + '</h3>');
+      var $p = $('<p class="date">' + date + ' at ' + time + '</p>');
       $($card).append($id);
       $($card).append($h3);
       $($card).append($p);
@@ -45,7 +130,7 @@ $(document).ready(function(){
       $($bigDiv).append($bigDate);
       $($bigDiv).append($description);
       $($bigDiv).append($bigLink);
-      // $($bigDiv).append($price);
+      $($bigDiv).append($price);
       });
     });
 });
