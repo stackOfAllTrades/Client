@@ -4,25 +4,31 @@ $(document).ready(function(){
 
   $.get(eventURL, function(data){
     for(var i = 0; i < data.length; i++){
-      var cardId = data[i].id;
+      var cardId = i;
       var $id = $('<p class="hidden">' + cardId + '</p>');
       var $card = $('<div class="card" + id="card' + (i+1) + '"></div>');
+      if (cardId === 0) {
+        $card.attr('id', 'card1');
+      }
       var $h3 = $('<h3>' + data[i].eventName + '</h3>');
       var $p = $('<p class="date">' + data[i].date + ' at ' + data[i].time + '</p>');
       $($card).append($id);
       $($card).append($h3);
       $($card).append($p);
 
-      if (data[i].id % 2 === 0) {
-        $('#column2').append($card);
+      $('.column').append($card);
 
-      } else {
-        $('#column1').append($card);
-      }
+      // if (data[i].id % 2 === 0) {
+      //   $('#column2').append($card);
+      //
+      // } else {
+      //   $('#column1').append($card);
+      // }
     }
     $('.card').click(function(){
-      var thisId = parseInt($(this).children(':first').text()-1);
+      var thisId = parseInt($(this).children(':first').text());
       $('main').empty();
+      var $id = $('<p>'+thisId+'</p>');
       var $bigDiv = $('<div class="big-div"></>');
       var $backLink = $('<a class=back-link href="index.html">Back to List</a>');
       var $bigName = $('<h3 class="big-title">' + data[thisId].eventName + '</h3>');
@@ -33,6 +39,7 @@ $(document).ready(function(){
       // var $price = $('<p class="price"></p>');
 
       $('main').append($bigDiv);
+      $($bigDiv).append($id);
       $($bigDiv).append($backLink);
       $($bigDiv).append($bigName);
       $($bigDiv).append($bigDate);

@@ -102,15 +102,44 @@ main {
 
 .column {
   max-height: 70vh;
-  width: 40%;
+  width: 55%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  overflow: auto;
+  justify-content: flex-start;
+  overflow: scroll;
+}
+
+.check-box {
+  margin-right: 5%;
+  width: 35%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.check-row {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+label {
+  font-size: 2em;
+  color: white;
+  font-family: arial;
+}
+
+.check-hold {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .card {
-  width: 90%;
+  width: 96.5%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85);
   margin-top: 3%;
@@ -118,6 +147,10 @@ main {
   text-align: center;
   box-shadow: inset 0 0 2em black;
   border: 0.1em solid black;
+}
+
+#card1 {
+  margin-top: 0px;
 }
 
 h3 {
@@ -154,6 +187,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  marign-bottom: 3%;
 }
 
 .x {
