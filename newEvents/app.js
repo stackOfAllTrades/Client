@@ -51,7 +51,7 @@ $(document).ready(function(){
       if(thisEvent.eventName) {
         eventName = thisEvent.eventName;
       } else {
-        eventName = "Event is Unnamed"
+        eventName = "Event is Unnamed";
       }
 
       var price = null;
@@ -90,12 +90,12 @@ $(document).ready(function(){
       }
 
       var $id = $('<p class="hidden">' + i + '</p>');
-      var $card = $('<div class="card" + id="card' + (i+1) + '"></div>');
+      var $card = $('<div class="panel panel-default" + id="card' + (i+1) + '"></div>');
       if (i === 0) {
         $card.attr('id', 'card1');
       }
 
-      var $h3 = $('<h3>' + eventName + '</h3>');
+      var $h3 = $('<h6>' + eventName + '</h3>');
       var $p = $('<p class="date">' + date + ' at ' + time + '</p>');
       $($card).append($id);
       $($card).append($h3);
