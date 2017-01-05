@@ -1,0 +1,106 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+  margin-top: 3%;
+  background-color: black;
+}
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  font-family: "Roboto Slab", serif;
+  color: white;
+  font-size: 30px;
+}
+section.module p {
+  color: white;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  background-color: black;
+  height: 20vh;
+}
+section.module.parallax {
+  margin-top: 0px;
+  height: 80vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.module.parallax h1 {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 3em;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax-1 {
+  background-image: url("./Denver.jpeg");
+}
+section.module.parallax-2 {
+  background-image: url("./Capitol.jpeg");
+}
+section.module.parallax-3 {
+  background-image: url("./Rainbow.jpeg");
+}
+section.module.parallax-4 {
+  background-image: url("./Rave.jpeg");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 5em;
+  }
+}
+  section.module.parallax h1 {
+    font-size: 6em;
+  }
+
+.logo {
+  width: 20vw;
+  height: 20vw;
+  margin-left: 6vw;
+}
+
+#logo-container {
+  margin-top: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  /*background-color: black;*/
+}
