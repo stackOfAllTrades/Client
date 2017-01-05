@@ -95,11 +95,11 @@ $(document).ready(function(){
         $card.attr('id', 'card1');
       }
 
-      var $h3 = $('<h6>' + eventName + '</h3>');
-      var $p = $('<p class="date">' + date + ' at ' + time + '</p>');
+      var $heading = $('<div class="panel-heading"><h3 class="panel-title">' + eventName + '</h3></div>');
+      var $body = $('<div class="panel-body"">' + date + ' at ' + time + '</div>');
       $($card).append($id);
-      $($card).append($h3);
-      $($card).append($p);
+      $($card).append($heading);
+      $($card).append($body);
 
       $('.column').append($card);
 

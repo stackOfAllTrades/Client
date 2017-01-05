@@ -21,26 +21,30 @@ time, mark, audio, video {
 
 body {
   margin-top: 3%;
-  background-color: black;
+  background-color: #000B12;
 }
 
 section.module:last-child {
   margin-bottom: 0;
 }
 section.module h2 {
-  font-family: "Roboto Slab", serif;
-  color: white;
+  font-family: Crimson Text;
   font-size: 30px;
+	color: #55ADAD;
 }
 section.module p {
-  color: white;
+  color: #C7CAC9;
+	font-family: PT Sans narrow;
 }
 section.module p:last-child {
   margin-bottom: 0;
 }
 section.module.content {
-  background-color: black;
+  background-color: #000B12;
   height: 20vh;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-bottom: 1.5%;
 }
 section.module.parallax {
   margin-top: 0px;
@@ -54,11 +58,10 @@ section.module.parallax {
   align-items: center;
 }
 section.module.parallax h1 {
-  color: rgba(0, 0, 0, 0.9);
-  font-size: 3em;
+	color: #000B12
+  font-size: 3vh;
+	text-transform: uppercase;
   text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	font-family: Renault;
 }
 section.module.parallax-1 {
@@ -76,10 +79,12 @@ section.module.parallax-4 {
 
 @media all and (min-width: 600px) {
   section.module h2 {
+		font-family: PT Sans narrow;
     font-size: 42px;
   }
   section.module p {
     font-size: 20px;
+		font family: PT Sans narrow;
   }
   section.module.parallax h1 {
     font-size: 5em;
@@ -87,14 +92,8 @@ section.module.parallax-4 {
 }
   section.module.parallax h1 {
     font-size: 6em;
-		font-family: Renault;
+		font-family: Crimson Text;
   }
-
-.logo {
-  width: 20vw;
-  height: 20vw;
-  margin-left: 6vw;
-}
 
 #logo-container {
   margin-top: 8%;

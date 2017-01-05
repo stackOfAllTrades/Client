@@ -77,6 +77,10 @@ main {
   align-items: center;
 }
 
+.panel {
+	width: 100%;
+}
+
 .hidden {
   display: none;
 }
