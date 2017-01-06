@@ -10,9 +10,11 @@
     <meta name="author" content="">
 
     <title>Denver To Remember</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-RpX8okQqCyUNG7PlOYNybyJXYTtGQH+7rIKiVvg1DLg6jahLEk47VvpUyS+E2/uJ" crossorigin="anonymous">
     <link href="css/mockup.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|PT+Sans+Narrow" rel="stylesheet">
 
 
 </head>
@@ -100,92 +102,119 @@
                 </h1>
             </div>
 
-        <!-- /.row -->
+            <!-- /.row -->
 
-        <!-- Portfolio Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Users Current Events</h2>
-            </div>
-            <div class="col-md-3">
-                <h3>Filter By</h3>
-                <div class="list-group">
-                    <a href="index.html" class="list-group-item">Sports</a>
-                    <a href="about.html" class="list-group-item">Family</a>
-                    <a href="services.html" class="list-group-item">Business & Tech</a>
-                    <a href="contact.html" class="list-group-item">Music & Art</a>
-                    <a href="about.html" class="list-group-item">Social</a>
-                    <a href="services.html" class="list-group-item">Something Else</a>
-                    <a href="contact.html" class="list-group-item">Miscellaneous</a>
-
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-
-        <!-- /.row -->
-
-        <hr>
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
+            <!-- Portfolio Section -->
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Stack Of All Trade</p>
+                    <h2 class="page-header">Users Current Events</h2>
                 </div>
+                <div class="col-md-3">
+                    <h3>Filter By</h3>
+                    <div class="list-group">
+                        <a href="index.html" class="list-group-item">Sports</a>
+                        <a href="about.html" class="list-group-item">Family</a>
+                        <a href="services.html" class="list-group-item">Business & Tech</a>
+                        <a href="contact.html" class="list-group-item">Music & Art</a>
+                        <a href="about.html" class="list-group-item">Social</a>
+                        <a href="services.html" class="list-group-item">Something Else</a>
+                        <a href="contact.html" class="list-group-item">Miscellaneous</a>
+
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <script id="card-template" type="text/x-handlebars-template">
+                        <div id="card-div-{{id}}" class="card-block col-md-3 col-sm-6 col-xs-12 span4 collapse-group">
+
+                            <!-- <img class="card-img-top" src="{{image_link}}" alt="Card image cap"> -->
+                            <h3>{{event_name}}</h3>
+                            <h4>Location: {{location}}</h4>
+                            <h4>Time: {{time}}</h4>
+                            <h4>Address: {{address}}</h4>
+                            <p class="collapse">{{description}}</p>
+                            <p><a class="btn" href="#">View details »</a></p>
+                            <!-- <button id="card-button-{{id}}">{{categories}}</button> -->
+                        </div>
+                    </script>
+                    <!-- <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/200x100" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title"></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div> -->
+                    <!-- <div class="col-md-3 col-sm-6">
+                    <img class="card-img-top" src="http://placehold.it/200x100" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title"></h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img class="card-img-top" src="http://placehold.it/200x100" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title"></h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div> -->
+                    <!-- <div class="col-md-3 col-sm-6">
+                    <img class="card-img-top" src="http://placehold.it/200x100" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title"></h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div> -->
+                    <!-- <div class="col-md-3 col-sm-6">
+                    <img class="card-img-top" src="http://placehold.it/200x100" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title"></h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div> -->
+                    <!-- <div class="col-md-3 col-sm-6">
+                    <img class="card-img-top" src="http://placehold.it/200x100" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title"></h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div> -->
+                </div>
+                <!-- /.row -->
+
+
+                <!-- /.row -->
+
+                <hr>
+
+
+
+                <!-- Footer -->
+                <footer>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Copyright &copy; Stack Of All Trade</p>
+                        </div>
+                    </div>
+                </footer>
+
             </div>
-        </footer>
 
-    </div>
-    <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <script src="app.js" charset="utf-8"></script>
 
 </body>
 
