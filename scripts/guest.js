@@ -1,8 +1,8 @@
 $(document).ready(function() {
-
-    var eventURL = 'https://stack-of-all-trade.herokuapp.com/events';
-    var categoryURL = 'https://stack-of-all-trade.herokuapp.com/category';
-    var eventCategoryURL = 'https://stack-of-all-trade.herokuapp.com/view_categoriesEvents/';
+    const baseURL = SERVER_URL;
+    var eventURL = `${SERVER_URL}/events`;
+    var categoryURL = `${SERVER_URL}/category`;
+    var eventCategoryURL = `${SERVER_URL}/view_categoriesEvents/`;
 
     $.get(categoryURL, function(data) {
 
