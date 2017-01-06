@@ -27,13 +27,8 @@ body {
   background-position: center;
 }
 
-header {
-  height: 7vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;;
-  align-items: center;
+.container-fluid {
+	background-color: #000B12;
 }
 
 .title {
@@ -46,30 +41,18 @@ header {
   flex-direction: row;
 }
 
-.linked {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.3em;
-}
-
-.nav-tab {
-  background-color: rgba(61, 60, 61, 0.6);
-  height: 80%;
-  margin: 0.5vw;
-  width: 8vw;
-}
-
 main {
+	font-family: PT Sans Narrow;
+	height: 90vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+	align-items: center;
+  justify-content: space-around;
 }
 
 .column {
   width: 60vw;
-  margin-top: 2%;
+  margin-top: 2.5%;
   height: 80vh;
   overflow: scroll;
   display: flex;
@@ -79,6 +62,25 @@ main {
 
 .panel {
 	width: 100%;
+	background: #000B12 !important;
+	margin: -1%;
+}
+
+.panel-default > .panel-heading {
+	background: #55ADAD !important;
+}
+
+.panel-title {
+	color: #000B12 !important;
+}
+
+.panel-body {
+	text-align: center;
+}
+
+.list-group-item {
+	font-size: 1.5em;
+	background-color: #000B12 !important;
 }
 
 .hidden {
@@ -122,39 +124,30 @@ main {
   color: white;
 }
 
-.check-box {
-  width: 30vw;
-  height: 60vh;
-  margin-right: 5%;
-  background-color: black;
-  box-shadow: inset 0 0 3em black;
-  display: flex;
-  flex-direction: row;
+.list-group {
+	width: 25vw;
+	float: right;
+	position: absolute;
+	bottom: 22%;
+	right: 5%;
 }
 
-.check-row {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#subButton {
+	background-color: #8EADA1 !important;
+	color: #000B12;
+	margin-top: 2%;
 }
 
-.check-hold {
-  font-size: 2em;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 8%;
+button:active {
+	background-color: #55ADAD !important;
 }
 
 footer {
   width: 100%;
-  background: black;
+  background-color: #000B12;
   height: 4vh;
-  position: absolute;
-  bottom: 0px;
+  position: fixed;
+  bottom: 0%;
   text-align: center;
 }
 

@@ -1,6 +1,17 @@
 $(document).ready(function(){
 
   var eventURL = 'https://stack-of-all-trade.herokuapp.com/events';
+  var categoryURL = 'https://stack-of-all-trade.herokuapp.com/category';
+
+  $.get(categoryURL, function(data){
+
+    for (var i = 0; i < data.length; i++){
+      let categoryName = data[i].name;
+      let $catButton = $('<button type="checkbox" class="list-group-item">' + categoryName + '</button>');
+      $('.list-group').prepend($catButton);
+    }
+
+  });
 
   $.get(eventURL, function(data){
     for(var i = 0; i < data.length; i++){
@@ -110,7 +121,7 @@ $(document).ready(function(){
       //   $('#column1').append($card);
       // }
     }
-    $('.card').click(function(){
+    $('.panel').click(function(){
       var thisId = parseInt($(this).children(':first').text());
       $('main').empty();
       var $id = $('<p class="hidden">'+thisId+'</p>');
