@@ -26,3 +26,7 @@ main {
   max-height: 80vh;
   overflow: scroll;
 }
+
+.selected {
+  background-color: #49515a !important;
+}
