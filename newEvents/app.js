@@ -30,8 +30,8 @@ $(document).ready(function(){
       }
 
       var eventLink = null;
-      if(thisEvent.eventLink){
-        eventLink = thisEvent.eventLink;
+      if(thisEvent.event_link){
+        eventLink = thisEvent.event_link;
       } else {
         eventLink = "No Link Available";
       }
@@ -133,7 +133,7 @@ $(document).ready(function(){
       var $bigDate = $('<p class="big-date">' + normalDate(data[thisId].date) + ' at ' + data[thisId].time + '</p>');
       var $description = $('<p class="big-description">' + data[thisId].description + '</p>');
       var $price = $('<p class="price"><small>' + data[thisId].price + "</p>");
-      var $bigLink = $('<a class="btn btn-primary btn-lg" class="link-button" href="' + data[thisId].eventLink + '">Click this link for further details</a>');
+      var $bigLink = $('<a class="btn btn-primary btn-lg" class="link-button" href="' + data[thisId].event_link + '">Click this link for further details</a>');
       var $address = $('<p class="address">' + data[thisId].address + '</p>');
       var $main2 = $('<div class="main2"></div>');
       // var $price = $('<p class="price"></p>');
