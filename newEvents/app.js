@@ -45,7 +45,7 @@ $(document).ready(function(){
 
       var date = null;
       if(thisEvent.date){
-        date = thisEvent.date;
+        date = normalDate(thisEvent.date);
       }
       else{
         date = "Date: TBD";
@@ -130,7 +130,7 @@ $(document).ready(function(){
       var $bigDiv = $('<div class="jumbotron"></>');
       var $backLink = $('<a class="btn btn-primary btn-lg" id="back-button" href="index.html">Back to List</a>');
       var $bigName = $('<h3 class="big-title">' + data[thisId].event_name + '</h3>');
-      var $bigDate = $('<p class="big-date">' + data[thisId].date + ' at ' + data[thisId].time + '</p>');
+      var $bigDate = $('<p class="big-date">' + normalDate(data[thisId].date) + ' at ' + data[thisId].time + '</p>');
       var $description = $('<p class="big-description">' + data[thisId].description + '</p>');
       var $price = $('<p class="price"><small>' + data[thisId].price + "</p>");
       var $bigLink = $('<a class="btn btn-primary btn-lg" class="link-button" href="' + data[thisId].eventLink + '">Click this link for further details</a>');
@@ -155,4 +155,19 @@ $(document).ready(function(){
 function parseId(string){
   var noLetter = string.replace(/[a-z]/g, '');
   console.log(noLetter);
+}
+
+function normalDate(string){
+  if (string.substr(0, 3) === "201"){
+    var justDate = string.substr(0, 10);
+    var stringArray = justDate.split('-');
+    stringArray.push(stringArray[0]);
+    stringArray.shift(stringArray[0]);
+    stringArray.join('-');
+    var backString = stringArray.toString();
+    var thisDate = backString.replace(/,/g, '/');
+    return thisDate;
+  } else {
+    return string;
+  }
 }
