@@ -189,7 +189,6 @@ $(document).ready(function(){
 
     $('#subButton').click(function(){
       $('.column').empty();
-      console.log($('input[type="radio"]:checked').val());
       $.get(eventCategoryURL + '/' + $('input:checked').val(), function(data){
         for(var i = 0; i < data.length; i++){
 
