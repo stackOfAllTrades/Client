@@ -1,0 +1,28 @@
+body {
+  background: url('./DenverPark.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.input-group {
+  height: 70vh;
+}
+
+label {
+  font-size: 2em !important;
+}
+
+input {
+  margin: 4vh !important;
+}
+
+main {
+  margin-top: 10vh;
+  background-color: #000B12;
+  padding: 4%;
+}
+
+.list-group {
+  max-height: 80vh;
+  overflow: scroll;
+}

@@ -9,12 +9,13 @@ $(document).ready(function() {
         for (var i = 0; i < data.length; i++) {
             var categoryName = data[i].name;
             var categoryId = data[i].id;
-            var $label = $('<label for="'+ categoryName +'">' + categoryName + '</label>');
-            var $catButton = $('<input type="checkbox" name="' + categoryName + '"value="' + categoryId + '">');
-            $('form').append($label);
-            $('form').append($catButton);
+            var $div = $('<div class="checker-holder"></div>');
+            var $label = $('<label class="label label-default" for="' + categoryName + '">' + categoryName + '</label>');
+            var $catButton = $('<input type="checkbox" name="Checkbox" aria-label="' + categoryName + ' class="form-control"' + categoryName +'"id="fancy-checkbox-default" value="' + categoryId + '">');
+              $($div).append($catButton);
+              $($div).append($label);
+              $('.input-group').append($div);
         }
-
     });
 
     $.get(eventURL, function(data) {
@@ -121,7 +122,7 @@ $(document).ready(function() {
             $($card).append($heading);
             $($card).append($body);
 
-            $('.column').append($card);
+            $('.list-group').append($card);
 
         }
 
@@ -206,7 +207,7 @@ $(document).ready(function() {
         return this.value;
       }).get().join(',');
       console.log(valArray);
-        $('.column').empty();
+        $('.list-group').empty();
         for(var x = 0; x < valArray.length; x++){
         $.get(eventCategoryURL + valArray[x], function(data) {
             for (var i = 0; i < data.length; i++) {
@@ -298,10 +299,10 @@ $(document).ready(function() {
                 $($card).append($heading);
                 $($card).append($body);
 
-                $('.column').append($card);
-                $('.form').prepend($('<h2 class="quantity">Displaying ' + parseInt(data.length) + 'results'));
+                $('.list-group').append($card);
 
             }
+
             $('.panel').click(function() {
                 var thisId = parseInt($(this).children(':first').text());
                 var thisEvent = data[thisId];
