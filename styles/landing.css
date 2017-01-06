@@ -21,6 +21,7 @@ time, mark, audio, video {
 
 body {
   margin-top: 3%;
+
   background-color: #000B12;
 }
 
@@ -28,13 +29,15 @@ section.module:last-child {
   margin-bottom: 0;
 }
 section.module h2 {
+  font-family: "Roboto Slab", serif;
+  color: white;
+  font-size: 30px;
+}
+section.module p {
+  color: white;
   font-family: Crimson Text;
   font-size: 30px;
 	color: #55ADAD;
-}
-section.module p {
-  color: #C7CAC9;
-	font-family: PT Sans narrow;
 }
 section.module p:last-child {
   margin-bottom: 0;
@@ -58,6 +61,7 @@ section.module.parallax {
   align-items: center;
 }
 section.module.parallax h1 {
+
 	color: #000B12
   font-size: 3vh;
 	text-transform: uppercase;
@@ -71,6 +75,7 @@ section.module.parallax-2 {
   background-image: url("./Capitol.jpeg");
 }
 section.module.parallax-3 {
+
   background-image: url("./Mountain.jpg");
 }
 section.module.parallax-4 {
@@ -79,21 +84,25 @@ section.module.parallax-4 {
 
 @media all and (min-width: 600px) {
   section.module h2 {
+
 		font-family: PT Sans narrow;
+
     font-size: 42px;
   }
   section.module p {
     font-size: 20px;
+
 		font family: PT Sans narrow;
+
   }
-  section.module.parallax h1 {
-    font-size: 5em;
-  }
-}
+
+
   section.module.parallax h1 {
     font-size: 6em;
 		font-family: Crimson Text;
   }
+
+}
 
 #logo-container {
   margin-top: 8%;
