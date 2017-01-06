@@ -121,16 +121,18 @@ $(document).ready(function(){
       //   $('#column1').append($card);
       // }
     }
+
+
     $('.panel').click(function(){
       var thisId = parseInt($(this).children(':first').text());
       $('main').empty();
       var $id = $('<p class="hidden">'+thisId+'</p>');
-      var $bigDiv = $('<div class="big-div"></>');
-      var $backLink = $('<a class=back-link href="index.html">Back to List</a>');
+      var $bigDiv = $('<div class="jumbotron"></>');
+      var $backLink = $('<a class="btn btn-primary btn-lg" id="back-button" href="index.html">Back to List</a>');
       var $bigName = $('<h3 class="big-title">' + data[thisId].eventName + '</h3>');
       var $bigDate = $('<p class="big-date">' + data[thisId].date + ' at ' + data[thisId].time + '</p>');
       var $description = $('<p class="big-description">' + data[thisId].description + '</p>');
-      var $bigLink = $('<a class="big-link" href="' + data[thisId].eventLink + '">Click this link for further details</a>');
+      var $bigLink = $('<a class="btn btn-primary btn-lg" class="link-button" href="' + data[thisId].eventLink + '">Click this link for further details</a>');
       var $main2 = $('<div class="main2"></div>');
       // var $price = $('<p class="price"></p>');
 
