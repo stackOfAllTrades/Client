@@ -104,9 +104,11 @@ main {
 	width: 70vw;
 	text-align: center;
 	position: absolute;
-	top: 23%;
+	top: 16%;
 	left: 15%;
 	background-color: #000B12 !important;
+	padding: 1%;
+	margin-bottom: 10%;
 }
 
 .big-title {

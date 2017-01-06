@@ -132,7 +132,9 @@ $(document).ready(function(){
       var $bigName = $('<h3 class="big-title">' + data[thisId].event_name + '</h3>');
       var $bigDate = $('<p class="big-date">' + data[thisId].date + ' at ' + data[thisId].time + '</p>');
       var $description = $('<p class="big-description">' + data[thisId].description + '</p>');
+      var $price = $('<p class="price"><small>' + data[thisId].price + "</p>");
       var $bigLink = $('<a class="btn btn-primary btn-lg" class="link-button" href="' + data[thisId].eventLink + '">Click this link for further details</a>');
+      var $address = $('<p class="address">' + data[thisId].address + '</p>');
       var $main2 = $('<div class="main2"></div>');
       // var $price = $('<p class="price"></p>');
 
@@ -142,8 +144,9 @@ $(document).ready(function(){
       $($bigDiv).append($bigName);
       $($bigDiv).append($bigDate);
       $($bigDiv).append($description);
-      $($bigDiv).append($bigLink);
+      $($bigDiv).append($address);
       $($bigDiv).append($price);
+      $($bigDiv).append($bigLink);
       });
     });
 });
