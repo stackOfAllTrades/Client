@@ -59,8 +59,8 @@ $(document).ready(function(){
       }
 
       var eventName = null;
-      if(thisEvent.eventName) {
-        eventName = thisEvent.eventName;
+      if(thisEvent.event_name) {
+        eventName = thisEvent.event_name;
       } else {
         eventName = "Event is Unnamed";
       }
@@ -129,7 +129,7 @@ $(document).ready(function(){
       var $id = $('<p class="hidden">'+thisId+'</p>');
       var $bigDiv = $('<div class="jumbotron"></>');
       var $backLink = $('<a class="btn btn-primary btn-lg" id="back-button" href="index.html">Back to List</a>');
-      var $bigName = $('<h3 class="big-title">' + data[thisId].eventName + '</h3>');
+      var $bigName = $('<h3 class="big-title">' + data[thisId].event_name + '</h3>');
       var $bigDate = $('<p class="big-date">' + data[thisId].date + ' at ' + data[thisId].time + '</p>');
       var $description = $('<p class="big-description">' + data[thisId].description + '</p>');
       var $bigLink = $('<a class="btn btn-primary btn-lg" class="link-button" href="' + data[thisId].eventLink + '">Click this link for further details</a>');
