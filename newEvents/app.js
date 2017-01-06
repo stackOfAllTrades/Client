@@ -9,7 +9,9 @@ $(document).ready(function() {
         for (var i = 0; i < data.length; i++) {
             var categoryName = data[i].name;
             var categoryId = data[i].id;
-            var $catButton = $('<label>' + categoryName + '</label><input type="radio" value="' + categoryId + '">');
+            var $label = $('<label for="'+ categoryName +'">' + categoryName + '</label>');
+            var $catButton = $('<input type="checkbox" name="' + categoryName + '"value="' + categoryId + '">');
+            $('form').append($label);
             $('form').append($catButton);
         }
 
@@ -200,8 +202,13 @@ $(document).ready(function() {
     });
 
     $('#subButton').click(function() {
+      let valArray = $('input:checked').map(function(){
+        return this.value;
+      }).get().join(',');
+      console.log(valArray);
         $('.column').empty();
-        $.get(eventCategoryURL + '/' + $('input:checked').val(), function(data) {
+        for(var x = 0; x < valArray.length; x++){
+        $.get(eventCategoryURL + valArray[x], function(data) {
             for (var i = 0; i < data.length; i++) {
 
                 //*Mark - Took away cardId and just used i
@@ -292,6 +299,7 @@ $(document).ready(function() {
                 $($card).append($body);
 
                 $('.column').append($card);
+                $('.form').prepend($('<h2 class="quantity">Displaying ' + parseInt(data.length) + 'results'));
 
             }
             $('.panel').click(function() {
@@ -368,6 +376,7 @@ $(document).ready(function() {
                 $($bigDiv).append($bigLink);
             });
         });
+      }
     });
 });
 
