@@ -66,6 +66,29 @@ header.carousel .fill {
     display: block;
     font-style: italic;
 }
+.card-block{
+    border: solid black .2em;
+    height: 20em;
+    /*overflow: scroll;*/
+}
+.overflow {
+    overflow: scroll;
+}
+/*.card-container{
+    overflow: scroll;
+}*/
+.page-header {
+    color: #55ADAD;
+    font-family: Crimson Text;
+}
+.list-group-item {
+    padding: 2em;
+    font-family: Crimson Text;
+}
+h3 {
+    color: #8EADA1;
+    font-family: Crimson Text;
+}
 
 /* Footer Styles */
 
