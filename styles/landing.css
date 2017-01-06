@@ -29,10 +29,11 @@ section.module:last-child {
   margin-bottom: 0;
 }
 section.module h2 {
-  font-family: "Roboto Slab", serif;
-  color: white;
+  font-family: Crimson Text;
   font-size: 30px;
+	color: #55ADAD;
 }
+
 section.module p {
   color: white;
   font-family: Crimson Text;
@@ -87,10 +88,19 @@ section.module.parallax-4 {
 
 		font-family: PT Sans narrow;
 
+
     font-size: 42px;
   }
   section.module p {
     font-size: 20px;
+
+		font family: PT Sans narrow;
+  }
+  section.module.parallax h1 {
+    font-size: 5em;
+  }
+}
+
 
 		font family: PT Sans narrow;
 
@@ -101,6 +111,7 @@ section.module.parallax-4 {
     font-size: 6em;
 		font-family: Crimson Text;
   }
+
 
 }
 

@@ -1,3 +1,18 @@
+$(document).ready(function() {
+    const baseURL = SERVER_URL;
+    var eventURL = `${SERVER_URL}/events`;
+    var categoryURL = `${SERVER_URL}/category`;
+    var eventCategoryURL = `${SERVER_URL}/view_categoriesEvents/`;
+
+    $.get(categoryURL, function(data) {
+
+        for (var i = 0; i < data.length; i++) {
+            var categoryName = data[i].name;
+            var categoryId = data[i].id;
+            var $catButton = $('<label>' + categoryName + '</label><input type="radio" value="' + categoryId + '">');
+            $('form').append($catButton);
+        }
+
 $(document).ready(function(){
 
   var eventURL = 'https://stack-of-all-trade.herokuapp.com/events';
@@ -164,12 +179,13 @@ $(document).ready(function() {
 
     $.get(eventURL, function(data) {
 
+
       eventArray = data;
 
         // const sugarDate = Sugar.Date.create('today');
         // console.log(sugarDate);
         data = data.sort(function compare(objectA, objectB) {
-d            if (objectA.date < objectB.date) { //a is less than b by some ordering criterion
+            if (objectA.date < objectB.date) { //a is less than b by some ordering criterion
                 return -1;
             }
             if (objectA.date > objectB.date) { //a is greater than b by the ordering criterion
@@ -186,7 +202,9 @@ d            if (objectA.date < objectB.date) { //a is less than b by some order
             var thisEvent = data[i];
 
             //*Mark - Validating that the properties are populated
+
             populateEvent(thisEvent, i);
+
         }
 
 
@@ -266,13 +284,7 @@ d            if (objectA.date < objectB.date) { //a is less than b by some order
     });
 
     $('#subButton').click(function() {
-      let valArray = $('input:checked').map(function(){
-        return this.value;
-      }).get().join(',');
-      console.log(valArray);
-        $('.group').empty();
-        for(var x = 0; x < valArray.length; x++){
-        $.get(eventCategoryURL + valArray[x], function(data) {
+
             for (var i = 0; i < data.length; i++) {
 
                 //*Mark - Took away cardId and just used i
@@ -362,9 +374,6 @@ d            if (objectA.date < objectB.date) { //a is less than b by some order
                 $($card).append($heading);
                 $($card).append($body);
 
-                $('.').append($card);
-
-            }
 
             $('.panel').click(function() {
                 var thisId = parseInt($(this).children(':first').text());
@@ -440,7 +449,9 @@ d            if (objectA.date < objectB.date) { //a is less than b by some order
                 $($bigDiv).append($bigLink);
             });
         });
+
       }
+
     });
 });
 
@@ -579,3 +590,4 @@ function populateEvent(thisEvent, i){
   $('#listOne').append($card);
 
 }
+
