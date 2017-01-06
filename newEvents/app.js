@@ -4,8 +4,20 @@ $(document).ready(function() {
 
     $.get(eventURL, function(data) {
 
-      // const sugarDate = Sugar.Date.create('today');
-      // console.log(sugarDate);
+        // const sugarDate = Sugar.Date.create('today');
+        // console.log(sugarDate);
+        data = data.sort(function compare(objectA, objectB) {
+            if (objectA.date < objectB.date) { //a is less than b by some ordering criterion
+                return -1;
+            }
+            if (objectA.date > objectB.date) { //a is greater than b by the ordering criterion
+                return 1;
+            }
+            // a must be equal to b
+            return 0;
+        });
+
+
 
         for (var i = 0; i < data.length; i++) {
 
@@ -41,11 +53,10 @@ $(document).ready(function() {
             if (thisEvent.date) {
                 date = thisEvent.date;
 
-                try{
-                  possibleDate = Sugar.Date(date).format('{Weekday}, {Month} {dd}, {yyyy}').raw;
-                }
-                catch(err) {
-                  possibleDate = date;
+                try {
+                    possibleDate = Sugar.Date(date).format('{Weekday}, {Month} {dd}, {yyyy}').raw;
+                } catch (err) {
+                    possibleDate = date;
                 }
                 date = possibleDate;
             } else {
