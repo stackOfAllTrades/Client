@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var eventURL = 'https://stack-of-all-trade.herokuapp.com/events';
 
-  $.get(eventURL, function(data){
+  $.get(eventURL, function(data)    {
     for(var i = 0; i < data.length; i++){
 
       //*Mark - Took away cardId and just used i
