@@ -83,21 +83,21 @@ $(document).ready(function(){
       if (thisEvent.location) {
         location = thisEvent.location;
       } else {
-        location = "Location: TBD"
+        location = "Location: TBD";
       }
 
       var address = null;
       if (thisEvent.address) {
         address = thisEvent.address;
       } else {
-        address = "Address: TBD"
+        address = "Address: TBD";
       }
 
       var price = null;
-      if (thisEvent.address) {
+      if (thisEvent.price) {
         price = thisEvent.price;
       } else {
-        price = "Price: TBD"
+        price = "Price: TBD";
       }
 
       var $id = $('<p class="hidden">' + i + '</p>');
@@ -106,7 +106,7 @@ $(document).ready(function(){
         $card.attr('id', 'card1');
       }
 
-      var $heading = $('<div class="panel-heading"><h3 class="panel-title">' + eventName + '</h3></div>');
+      var $heading = $('<div class="panel-heading"><h3 class="panel-title">' + thisEvent.event_name + '</h3></div>');
       var $body = $('<div class="panel-body"">' + date + ' at ' + time + '</div>');
       $($card).append($id);
       $($card).append($heading);
@@ -125,18 +125,62 @@ $(document).ready(function(){
 
     $('.panel').click(function(){
       var thisId = parseInt($(this).children(':first').text());
+      var thisEvent = data[thisId];
+
+      var name = null;
+      if(thisEvent.event_name){
+        name = thisEvent.event_name;
+      } else {
+        name = "This event has no name.";
+      }
+
+      var date = null;
+      if(thisEvent.date){
+        date = normalDate(thisEvent.date);
+      } else {
+        date = "Event Date TBD";
+      }
+
+      var time = null;
+      if(thisEvent.time) {
+        time = thisEvent.time;
+      } else {
+        date = "Event Time TBD";
+      }
+
+      var description = null;
+      if(thisEvent.description){
+        description = thisEvent.description;
+      } else {
+        description = "No one has bothered to describe this Event!";
+      }
+
+      var price = null;
+      if(thisEvent.price){
+        price = thisEvent.price;
+      } else {
+        price = "This event has no price posted";
+      }
+
+      var address = null;
+      if(thisEvent.price){
+        address = thisEvent.price;
+      } else {
+        address = "The address for this event has not been listed.";
+      }
+
+      var eventLink = thisEvent.event_link;
+
       $('main').empty();
       var $id = $('<p class="hidden">'+thisId+'</p>');
       var $bigDiv = $('<div class="jumbotron"></>');
       var $backLink = $('<a class="btn btn-primary btn-lg" id="back-button" href="index.html">Back to List</a>');
-      var $bigName = $('<h3 class="big-title">' + data[thisId].event_name + '</h3>');
-      var $bigDate = $('<p class="big-date">' + normalDate(data[thisId].date) + ' at ' + data[thisId].time + '</p>');
-      var $description = $('<p class="big-description">' + data[thisId].description + '</p>');
-      var $price = $('<p class="price"><small>' + data[thisId].price + "</p>");
-      var $bigLink = $('<a class="btn btn-primary btn-lg" class="link-button" href="' + data[thisId].event_link + '">Click this link for further details</a>');
-      var $address = $('<p class="address">' + data[thisId].address + '</p>');
-      var $main2 = $('<div class="main2"></div>');
-      // var $price = $('<p class="price"></p>');
+      var $bigName = $('<h3 class="big-title">' + name + '</h3>');
+      var $bigDate = $('<p class="big-date">' + date + ' at ' + time + '</p>');
+      var $description = $('<p class="big-description">' + description + '</p>');
+      var $price = $('<p class="price"><small>' + price + "</p>");
+      var $bigLink = $('<a class="btn btn-primary btn-lg" class="link-button" href="' + eventLink + '">Click this link for further details</a>');
+      var $address = $('<p class="address">' + address + '</p>');
 
       $('main').append($bigDiv);
       $($bigDiv).append($id);
