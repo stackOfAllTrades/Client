@@ -1,3 +1,6 @@
+let eventArray = [];
+let categoryArray = [];
+
 $(document).ready(function() {
 
     var eventURL = 'https://stack-of-all-trade.herokuapp.com/events';
@@ -6,16 +9,20 @@ $(document).ready(function() {
 
     $.get(categoryURL, function(data) {
 
+      categoryArray = data;
+
         for (var i = 0; i < data.length; i++) {
             var categoryName = data[i].name;
             var categoryId = data[i].id;
-            var $catButton = $('<label>' + categoryName + '</label><input type="radio" value="' + categoryId + '">');
-            $('form').append($catButton);
+            var $listItem = $(`<div class="list-group-item" id="category-${categoryId}" val="${categoryId}">${categoryName}</div>`);
+              $('#listTwo').append($listItem);
+              createClickHandler(categoryId);
         }
-
     });
 
     $.get(eventURL, function(data) {
+
+      eventArray = data;
 
         // const sugarDate = Sugar.Date.create('today');
         // console.log(sugarDate);
@@ -37,90 +44,7 @@ $(document).ready(function() {
             var thisEvent = data[i];
 
             //*Mark - Validating that the properties are populated
-            var sourceName = null;
-            if (thisEvent.date) {
-                sourceName = thisEvent.sourceName;
-            } else {
-                date = "Indeterminate Date";
-            }
-
-            var eventLink = null;
-            if (thisEvent.event_link) {
-                eventLink = thisEvent.event_link;
-            } else {
-                eventLink = "No Link Available";
-            }
-
-            var description = null;
-            if (thisEvent.description) {
-                description = thisEvent.description;
-            } else {
-                description = "Description Unavailable";
-            }
-
-            var date = null;
-            if (thisEvent.date) {
-                date = normalDate(thisEvent.date);
-            } else {
-                date = "Date: TBD";
-            }
-
-            var time = null;
-            if (thisEvent.time) {
-                time = thisEvent.time;
-            } else {
-                time = "Time: TBD";
-            }
-
-            var eventName = null;
-            if (thisEvent.event_name) {
-                eventName = thisEvent.event_name;
-            } else {
-                eventName = "Event is Unnamed";
-            }
-
-            var price = null;
-            if (thisEvent.price) {
-                price = thisEvent.price;
-            } else {
-                price = "Price: TBD";
-            }
-
-            var imageLink = null;
-            if (thisEvent.imageLink) {
-                imageLink = thisEvent.imageLink;
-            } else {
-                imageLink = "Image Unavailable";
-            }
-
-            var location = null;
-            if (thisEvent.location) {
-                location = thisEvent.location;
-            } else {
-                location = "Location: TBD";
-            }
-
-            var address = null;
-            if (thisEvent.address) {
-                address = thisEvent.address;
-            } else {
-                address = "Address: TBD";
-            }
-
-            var $id = $('<p class="hidden">' + i + '</p>');
-            var $card = $('<div class="panel panel-default" + id="card' + (i + 1) + '"></div>');
-            if (i === 0) {
-                $card.attr('id', 'card1');
-            }
-
-            var $heading = $('<div class="panel-heading"><h3 class="panel-title">' + thisEvent.event_name + '</h3></div>');
-            var $body = $('<div class="panel-body"">' + date + ' at ' + time + '</div>');
-            $($card).append($id);
-            $($card).append($heading);
-            $($card).append($body);
-
-            $('.column').append($card);
-
+            populateEvent(thisEvent, i);
         }
 
 
@@ -200,8 +124,13 @@ $(document).ready(function() {
     });
 
     $('#subButton').click(function() {
-        $('.column').empty();
-        $.get(eventCategoryURL + '/' + $('input:checked').val(), function(data) {
+      let valArray = $('input:checked').map(function(){
+        return this.value;
+      }).get().join(',');
+      console.log(valArray);
+        $('.group').empty();
+        for(var x = 0; x < valArray.length; x++){
+        $.get(eventCategoryURL + valArray[x], function(data) {
             for (var i = 0; i < data.length; i++) {
 
                 //*Mark - Took away cardId and just used i
@@ -291,9 +220,10 @@ $(document).ready(function() {
                 $($card).append($heading);
                 $($card).append($body);
 
-                $('.column').append($card);
+                $('.').append($card);
 
             }
+
             $('.panel').click(function() {
                 var thisId = parseInt($(this).children(':first').text());
                 var thisEvent = data[thisId];
@@ -368,6 +298,7 @@ $(document).ready(function() {
                 $($bigDiv).append($bigLink);
             });
         });
+      }
     });
 });
 
@@ -391,4 +322,118 @@ function normalDate(string) {
     } else {
         return string;
     }
+}
+
+function createClickHandler(id){
+  $(`#category-${id}`).click(function(){
+    console.log('clicked' + id);
+    $(`.list-group-item`).removeClass('selected');
+    $(`#category-${id}`).addClass('selected');
+    $('#listOne').empty();
+    for(var i = 0; i < eventArray.length; i++){
+      // debugger;
+      let shouldAppend = false;
+      const thisEvent = eventArray[i];
+      for(var j = 0; j < categoryArray.length; j++){
+        const thisCategory = categoryArray[id-1];
+        for(var z = 0; z < thisEvent.categories.length; z++){
+          const thisEventCategory = thisEvent.categories[z];
+          if(thisEventCategory === thisCategory.name){
+            shouldAppend = true;
+          }
+        }
+      }
+      if(shouldAppend) {
+        console.log(thisEvent.event_name);
+        populateEvent(thisEvent, i);
+      }
+    }
+  });
+}
+
+function populateEvent(thisEvent, i){
+  var sourceName = null;
+  if (thisEvent.date) {
+      sourceName = thisEvent.sourceName;
+  } else {
+      date = "Indeterminate Date";
+  }
+
+  var eventLink = null;
+  if (thisEvent.event_link) {
+      eventLink = thisEvent.event_link;
+  } else {
+      eventLink = "No Link Available";
+  }
+
+  var description = null;
+  if (thisEvent.description) {
+      description = thisEvent.description;
+  } else {
+      description = "Description Unavailable";
+  }
+
+  var date = null;
+  if (thisEvent.date) {
+      date = normalDate(thisEvent.date);
+  } else {
+      date = "Date: TBD";
+  }
+
+  var time = null;
+  if (thisEvent.time) {
+      time = thisEvent.time;
+  } else {
+      time = "Time: TBD";
+  }
+
+  var eventName = null;
+  if (thisEvent.event_name) {
+      eventName = thisEvent.event_name;
+  } else {
+      eventName = "Event is Unnamed";
+  }
+
+  var price = null;
+  if (thisEvent.price) {
+      price = thisEvent.price;
+  } else {
+      price = "Price: TBD";
+  }
+
+  var imageLink = null;
+  if (thisEvent.imageLink) {
+      imageLink = thisEvent.imageLink;
+  } else {
+      imageLink = "Image Unavailable";
+  }
+
+  var location = null;
+  if (thisEvent.location) {
+      location = thisEvent.location;
+  } else {
+      location = "Location: TBD";
+  }
+
+  var address = null;
+  if (thisEvent.address) {
+      address = thisEvent.address;
+  } else {
+      address = "Address: TBD";
+  }
+
+  var $id = $('<p class="hidden">' + i + '</p>');
+  var $card = $('<div class="panel panel-default" + id="card' + (i + 1) + '"></div>');
+  if (i === 0) {
+      $card.attr('id', 'card1');
+  }
+
+  var $heading = $('<div class="panel-heading"><h3 class="panel-title">' + thisEvent.event_name + '</h3></div>');
+  var $body = $('<div class="panel-body"">' + date + ' at ' + time + '</div>');
+  $($card).append($id);
+  $($card).append($heading);
+  $($card).append($body);
+
+  $('#listOne').append($card);
+
 }
