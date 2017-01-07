@@ -31,22 +31,20 @@ section.module h2 {
   font-family: Crimson Text;
   font-size: 30px;
 	color: #55ADAD;
+	text-shadow: 1px 1px 1px black;
 }
 
-section.module p {
-  color: white;
-  font-family: Crimson Text;
-	color: #55ADAD;
-}
+
 section.module p:last-child {
   margin-bottom: 0;
 }
 section.module.content {
-  background-color: #000B12;
+  background-color: #2A2A2A;
   height: 20vh;
 	padding-left: 4%;
 	padding-right: 4%;
 	padding-bottom: 1.5%;
+	box-shadow: inset 0 0 5em black;
 }
 section.module.parallax {
   margin-top: 0px;
@@ -92,7 +90,7 @@ section.module.parallax-4 {
     font-size: 42px;
   }
   section.module p {
-    font-size: 20px;
+    font-size: 1.8em;
 
 		font family: PT Sans narrow;
   }
@@ -104,7 +102,8 @@ section.module.parallax-4 {
 .first-title {
 	width: 100%;
 	margin-left: 3%;
-}
+	margin-top: 9d% !important;
+	text-shadow: 0.05em 0.05em 0.04em black;
 
 		font family: PT Sans narrow;
 
@@ -132,6 +131,7 @@ img {
 	width: 2em;
 	height: 2em;
 	box-shadow: 1px 1px 1px black;
+
 }
 
 .link-hold {
@@ -156,10 +156,14 @@ img {
 .button-label {
 	text-align: center;
 	align-self: center;
-	font-size: 0.2em;
-	margin-right: 13.5vw;
+	font-size: 1.3em !important;
 	text-align: left;
 	background: none;
+	color: #55ADAD !important;
+}
+
+#btn-label {
+	color: #55ADAD;
 }
 
 .linkButton {
@@ -171,7 +175,6 @@ img {
 	justify-content: space-between;
 	align-items: center;
 	text-decoration: none;
-	border: 1px solid #55ADAD;
 	padding: 1%;
 }
 
