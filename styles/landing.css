@@ -183,7 +183,8 @@ img {
 
 .just-shadow {
 	position: absolute;
-	top: 29.5%;
+	top: 29.7%;
+	right: 22.7%;
 	text-shadow: 4px 4px 2px black !important;
 }
 
@@ -215,7 +216,7 @@ form {
 
 input {
 	background-color: rgba(85, 173, 173, 0.8);
-	border: 1px solid #000B12;
+	border: 2px solid #55ADAD;
 	font-size: 1.5em;
 	margin: 0.5em;
 	box-shadow: 2px 2px 1px black;
@@ -229,10 +230,9 @@ input {
 	font-family: Crimson Text;
 	width: 15vw;
 	height: 7vh;
-	border: 1px solid rgba(85, 173, 173, 0.8);
+	border: none;
 	font-size: 2em;
 	color: rgba(85, 173, 173, 0.8);
-	border-radius: 10%;
 }
 
 #join {
@@ -241,5 +241,9 @@ input {
 
 .signUpButton:hover {
 	background-color: white;
+}
 
+.button-p {
+	border: 1px solid #55ADAD;
+	font-size: 1em !important;
 }
