@@ -62,26 +62,25 @@ section.module.parallax {
 }
 section.module.parallax h1 {
 	color: white;
-	text-shadow: 1em 1em 0.04em black;
-  font-size: 3vh;
+	text-shadow: 0.05em 0.05em 0.04em black;
 	text-transform: uppercase;
   text-align: center;
 	font-family: Renault;
-	margin-top: 9.7%;
+	margin-top: 11%;
 }
 section.module.parallax-1 {
 	padding-right: 1.5%;
-  background-image: url("../images/Denver.jpeg");
+  background-image: url("../images/Optimized-Denver.jpeg");
 }
 section.module.parallax-2 {
-  background-image: url("../images/Capitol.jpeg");
+  background-image: url("../images/Optimized-Capitol.jpeg");
 }
 section.module.parallax-3 {
 
-  background-image: url("../images/Mountain.jpg");
+  background-image: url("../images/Optimized-Mountain.jpg");
 }
 section.module.parallax-4 {
-  background-image: url("../images/Rave.jpeg");
+  background-image: url("../images/Optimized-Rave.jpeg");
 }
 
 @media all and (min-width: 600px) {
@@ -102,6 +101,10 @@ section.module.parallax-4 {
   }
 }
 
+.first-title {
+	width: 100%;
+	margin-left: 3%;
+}
 
 		font family: PT Sans narrow;
 
@@ -142,7 +145,7 @@ img {
 	padding-left: 1%;
 	border-radius: 3%;
 	border: 1px solid #000B12;
-	width: 24vw;
+	width: 12vw;
 	box-shadow: 3px 3px 2px black;
 }
 
@@ -154,11 +157,13 @@ img {
 	text-align: center;
 	align-self: center;
 	font-size: 0.2em;
-	margin-right: 9.9vw;
+	margin-right: 13.5vw;
+	text-align: left;
 	background: none;
 }
 
 .linkButton {
+	width: 11vw;
 	background: none;
 	margin: 0px;
 	display: flex;
@@ -233,10 +238,6 @@ input {
 	border: none;
 	font-size: 2em;
 	color: rgba(85, 173, 173, 0.8);
-}
-
-#join {
-	margin-bottom: 200%;
 }
 
 .signUpButton:hover {
