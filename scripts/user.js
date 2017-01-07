@@ -40,6 +40,7 @@
          })
          .catch((error) => {
              console.log(error);
+             console.log(error.status);
              //  if (res.status === 500) {
              //  alert("Sorry... our bad. Reloading the page.");
              //  window.location.reload();
