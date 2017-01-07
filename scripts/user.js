@@ -1,21 +1,29 @@
  const URL = SERVER_URL;
  $(document).ready(function() {
-     const data = getData()
+     const Chicken = getEvents()
          .then((data) => {
-             getEventData(data);
-            //  .then(getCategoryData);
+             getEventData(data)
+         })
+         .catch((error) => {
+             if (res.status === 500) {
+                 alert("Sorry... our bad. Reloading the page.");
+                 window.location.reload();
+             }
+         })
+        //  .then(() => {
+        //      alert("Ready for categories!");
+        //  });
 
-         });
 
  });
 
- function getData() {
+ function getEvents() {
      let data = $.get(`${URL}/events`);
      return data;
  }
 
  function getEventData(data) {
-    //  console.log(data[0].categories[1]);
+     //  console.log(data[0].categories[1]);
      data.forEach((element) => {
          //  console.log(element);
          const parent = $('.card-container');
@@ -28,9 +36,10 @@
      });
 
  }
- // function getCategoryData(data){
- //     console.log(data[0]);
- // }
+
+ function getCategoryData(data) {
+     console.log(data[0]);
+ }
 
  $(function carousel() {
      $('.carousel').carousel({
