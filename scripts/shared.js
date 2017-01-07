@@ -20,6 +20,6 @@ function getServerBaseURL() {
     if (window.location.hostname == "localhost") {
         return "http://localhost:3000"
     } else {
-        return "https://stack-of-all-trade.herokuapp.com"
+        return "https://stack-of-all-trade.herokuapp.com/auth/google/callback"
     }
 }
