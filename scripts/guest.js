@@ -54,8 +54,10 @@ $(document).ready(function() {
             }
         })
         .catch((error) => {
-            alert("Sorry... our bad. Reloading the page.");
-            window.location.reload();
+            if (res.status === 500) {
+                alert("Sorry... our bad. Reloading the page.");
+                window.location.reload();
+            }
         })
 
 
