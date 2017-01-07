@@ -36,7 +36,6 @@ section.module h2 {
 section.module p {
   color: white;
   font-family: Crimson Text;
-  font-size: 30px;
 	color: #55ADAD;
 }
 section.module p:last-child {
@@ -178,7 +177,8 @@ img {
 }
 
 .find {
-	margin-bottom: 90%;
+	margin-bottom: 50%;
+	text-shadow: 3px 3px 3px black !important;
 }
 
 .just-shadow {
@@ -190,4 +190,55 @@ img {
 .h1-hold {
 	margin-top: 4.2%;
 	margin-right: 7%;
+}
+
+#content3 {
+	padding-bottom: 2%;
+}
+
+form {
+	position: absolute;
+	right: 21%;
+	bottom: -270%;
+	display: flex;
+	flex-direction: row;
+}
+
+::-webkit-input-placeholder {
+	color: #000B12;
+}
+
+.multi-input {
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	background-color: rgba(85, 173, 173, 0.8);
+	border: 1px solid #000B12;
+	font-size: 1.5em;
+	margin: 0.5em;
+	box-shadow: 2px 2px 1px black;
+}
+
+.signUpButton {
+	background-color: #000B12;
+	position: absolute;
+	bottom: -278%;
+	right: 42.6%;
+	font-family: Crimson Text;
+	width: 15vw;
+	height: 7vh;
+	border: 1px solid rgba(85, 173, 173, 0.8);
+	font-size: 2em;
+	color: rgba(85, 173, 173, 0.8);
+	border-radius: 10%;
+}
+
+#join {
+	margin-bottom: 200%;
+}
+
+.signUpButton:hover {
+	background-color: white;
 }
