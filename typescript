@@ -1,0 +1,155 @@
+Script started on Fri Jan  6 16:32:20 2017
+]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Clientsc[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=sscs  sscripts[?1l>
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..lient/scripts]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;lsguest.js
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..lient/scripts]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;lsguest.js
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..lient/scripts]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=...[?1l>
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=sstyles[?1l>
+]2;styles]1;styles[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;lsguest.css   landing.css user.css
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=...[?1l>
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;ls404.html            firebase.json       index.html          typescript
+README.md           guestDashboard.html [1m[36mscripts[39;49m[0m             userDashboard.html
+[1m[36mbootstrap-mockup[39;49m[0m    [1m[36mimages[39;49m[0m              [1m[36mstyles[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=sstye  l s styles[1m/[0m[0m [?1l>
+]2;styles]1;styles[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;lsguest.css   landing.css user.css
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=...[?1l>
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=sscript
+[J[0mSCRIPT    [Jscript    [J[1;31mscripts[0m/[J[A[0m[27m[24m[25Cscript[KSCRIPT[1m=[0m
+[J[7mSCRIPT  [0m  [Jscript    [J[1;31mscripts[0m/[J[A[0m[27m[24m[25CSCRIPT[1m=[0m[K
+[7mSCRIPT  [0m  [7mSCRIPT  [0m  [A[0m[27m[24m[25CSCRIPT[1m=[0m[Kscript[0m 
+[10C[7mscript  [0m  SCRIPT    [A[0m[27m[24m[25Cscript[Ks[1m/[0m
+[20C[7mscripts/[0m[10Cscript    [A[0m[27m[24m[25Cscripts[1m/[0m[K
+[J[A[33C[0m/ls[?1l>
+[J]2;scripts/ls]1;scripts/lszsh: no such file or directory: scripts/ls
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;31m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=scripts/ls    s[?1l>
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..lient/scripts]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=s lls[?1l>
+]2;ls -G]1;lsguest.js
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..lient/scripts]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=aa guest.js[1m [0m[0m [?1l>
+]2;atom . guest.js]1;a[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..lient/scripts]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=...[?1l>
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=sstyles[1m/[0m[0m [?1l>
+]2;styles]1;styles[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;lsguest.css   landing.css user.css
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=aa guest.css[1m [0m[0m [?1l>
+]2;atom . guest.css]1;a[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=...[?1l>
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=sscripts[?1l>
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..lient/scripts]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=aa guest.js[1m [0m[0m [?1l>
+]2;atom . guest.js]1;a[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..lient/scripts]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=ggit pull origin team[?1l>
+]2;git pull origin team]1;gitfatal: Couldn't find remote ref team
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..lient/scripts]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/scripts[0m[27m[24m[J[01;31m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=ggit pull origin team          team master[?1l>
+]2;git pull team master]1;gitremote: Counting objects: 55, done.[K
+remote: Compressing objects:   1% (1/54)   [Kremote: Compressing objects:   3% (2/54)   [Kremote: Compressing objects:   5% (3/54)   [Kremote: Compressing objects:   7% (4/54)   [Kremote: Compressing objects:   9% (5/54)   [Kremote: Compressing objects:  11% (6/54)   [Kremote: Compressing objects:  12% (7/54)   [Kremote: Compressing objects:  14% (8/54)   [Kremote: Compressing objects:  16% (9/54)   [Kremote: Compressing objects:  18% (10/54)   [Kremote: Compressing objects:  20% (11/54)   [Kremote: Compressing objects:  22% (12/54)   [Kremote: Compressing objects:  24% (13/54)   [Kremote: Compressing objects:  25% (14/54)   [Kremote: Compressing objects:  27% (15/54)   [Kremote: Compressing objects:  29% (16/54)   [Kremote: Compressing objects:  31% (17/54)   [Kremote: Compressing objects:  33% (18/54)   [Kremote: Compressing objects:  35% (19/54)   [Kremote: Compressing objects:  37% (20/54)   [Kremote: Compressing objects:  38% (21/54)   [Kremote: Compressing objects:  40% (22/54)   [Kremote: Compressing objects:  42% (23/54)   [Kremote: Compressing objects:  44% (24/54)   [Kremote: Compressing objects:  46% (25/54)   [Kremote: Compressing objects:  48% (26/54)   [Kremote: Compressing objects:  50% (27/54)   [Kremote: Compressing objects:  51% (28/54)   [Kremote: Compressing objects:  53% (29/54)   [Kremote: Compressing objects:  55% (30/54)   [Kremote: Compressing objects:  57% (31/54)   [Kremote: Compressing objects:  59% (32/54)   [Kremote: Compressing objects:  61% (33/54)   [Kremote: Compressing objects:  62% (34/54)   [Kremote: Compressing objects:  64% (35/54)   [Kremote: Compressing objects:  66% (36/54)   [Kremote: Compressing objects:  68% (37/54)   [Kremote: Compressing objects:  70% (38/54)   [Kremote: Compressing objects:  72% (39/54)   [Kremote: Compressing objects:  74% (40/54)   [Kremote: Compressing objects:  75% (41/54)   [Kremote: Compressing objects:  77% (42/54)   [Kremote: Compressing objects:  79% (43/54)   [Kremote: Compressing objects:  81% (44/54)   [Kremote: Compressing objects:  83% (45/54)   [Kremote: Compressing objects:  85% (46/54)   [Kremote: Compressing objects:  87% (47/54)   [Kremote: Compressing objects:  88% (48/54)   [Kremote: Compressing objects:  90% (49/54)   [Kremote: Compressing objects:  92% (50/54)   [Kremote: Compressing objects:  94% (51/54)   [Kremote: Compressing objects:  96% (52/54)   [Kremote: Compressing objects:  98% (53/54)   [Kremote: Compressing objects: 100% (54/54)   [Kremote: Compressing objects: 100% (54/54), done.[K
+remote: Total 55 (delta 19), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:   1% (1/55)   Unpacking objects:   3% (2/55)   Unpacking objects:   5% (3/55)   Unpacking objects:   7% (4/55)   Unpacking objects:   9% (5/55)   Unpacking objects:  10% (6/55)   Unpacking objects:  12% (7/55)   Unpacking objects:  14% (8/55)   Unpacking objects:  16% (9/55)   Unpacking objects:  18% (10/55)   Unpacking objects:  20% (11/55)   Unpacking objects:  21% (12/55)   Unpacking objects:  23% (13/55)   Unpacking objects:  25% (14/55)   Unpacking objects:  27% (15/55)   Unpacking objects:  29% (16/55)   Unpacking objects:  30% (17/55)   Unpacking objects:  32% (18/55)   Unpacking objects:  34% (19/55)   Unpacking objects:  36% (20/55)   Unpacking objects:  38% (21/55)   Unpacking objects:  40% (22/55)   Unpacking objects:  41% (23/55)   Unpacking objects:  43% (24/55)   Unpacking objects:  45% (25/55)   Unpacking objects:  47% (26/55)   Unpacking objects:  49% (27/55)   Unpacking objects:  50% (28/55)   Unpacking objects:  52% (29/55)   Unpacking objects:  54% (30/55)   Unpacking objects:  56% (31/55)   Unpacking objects:  58% (32/55)   Unpacking objects:  60% (33/55)   Unpacking objects:  61% (34/55)   Unpacking objects:  63% (35/55)   Unpacking objects:  65% (36/55)   Unpacking objects:  67% (37/55)   Unpacking objects:  69% (38/55)   Unpacking objects:  70% (39/55)   Unpacking objects:  72% (40/55)   Unpacking objects:  74% (41/55)   Unpacking objects:  76% (42/55)   Unpacking objects:  78% (43/55)   Unpacking objects:  80% (44/55)   Unpacking objects:  81% (45/55)   Unpacking objects:  83% (46/55)   Unpacking objects:  85% (47/55)   Unpacking objects:  87% (48/55)   Unpacking objects:  89% (49/55)   Unpacking objects:  90% (50/55)   Unpacking objects:  92% (51/55)   Unpacking objects:  94% (52/55)   Unpacking objects:  96% (53/55)   Unpacking objects:  98% (54/55)   Unpacking objects: 100% (55/55)   Unpacking objects: 100% (55/55), done.
+From https://github.com/stackOfAllTrades/Client
+ * branch            master     -> FETCH_HEAD
+   7552c3f..ec822e9  master     -> team/master
+Updating 6c7e13f..ec822e9
+error: Your local changes to the following files would be overwritten by merge:
+	guestDashboard.html
+	scripts/guest.js
+	styles/guest.css
+Please commit your changes or stash them before you merge.
+error: The following untracked working tree files would be overwritten by merge:
+	guestDashBoard.html
+Please move or remove them before you merge.
+Aborting
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..lient/scripts]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/scripts[0m[27m[24m[J[01;31m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=ggit stash[?1l>
+]2;git stash]1;gitSaved working directory and index state WIP on master: 6c7e13f sorry
+HEAD is now at 6c7e13f sorry
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..lient/scripts]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=ggit pull orgi    team am  master[?1l>
+]2;git pull team master]1;gitFrom https://github.com/stackOfAllTrades/Client
+ * branch            master     -> FETCH_HEAD
+Updating 6c7e13f..ec822e9
+Fast-forward
+ .DS_Store           | Bin [31m0[m -> [32m8196[m bytes
+ guestDashBoard.html |  97 [32m+++++++++++++++++++[m
+ guestDashboard.html |  50 [32m++++++++++[m
+ index.html          |  10 [32m++[m
+ index.js            |   0
+ scripts/guest.js    | 174 [32m++++++++++++++++++++++++++++++++[m[31m--[m
+ scripts/index.js    |   0
+ scripts/shared.js   |  27 [32m++++++[m
+ scripts/user.js     |  39 [32m++++++++[m
+ styles/guest.css    | 266 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ styles/landing.css  |  24 [32m++++[m[31m-[m
+ styles/user.css     |  23 [32m+++++[m
+ userDashBoard.html  | 221 [32m+++++++++++++++++++++++++++++++++++++++++++[m
+ 13 files changed, 919 insertions(+), 12 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 100644 guestDashBoard.html
+ create mode 100644 index.js
+ create mode 100644 scripts/index.js
+ create mode 100644 scripts/shared.js
+ create mode 100644 scripts/user.js
+ create mode 100644 userDashBoard.html
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..lient/scripts]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=...[?1l>
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;ls404.html            firebase.json       index.html          [1m[36mstyles[39;49m[0m
+README.md           guestDashboard.html index.js            typescript
+[1m[36mbootstrap-mockup[39;49m[0m    [1m[36mimages[39;49m[0m              [1m[36mscripts[39;49m[0m             userDashBoard.html
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=aa guestDashboard.html[1m [0m[0m [?1l>
+]2;atom . guestDashboard.html]1;a[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=...[?1l>
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..ckOfAllTrades]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades[0m[27m[24m[J[01;32m➜  [36mstackOfAllTrades[00m [K[?1h=cclieC[3Cnt[1m/[0m[0m [?1l>
+]2;Client]1;Client[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;ls404.html            firebase.json       index.html          [1m[36mstyles[39;49m[0m
+README.md           guestDashboard.html index.js            typescript
+[1m[36mbootstrap-mockup[39;49m[0m    [1m[36mimages[39;49m[0m              [1m[36mscripts[39;49m[0m             userDashBoard.html
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=sstyles[1m/[0m[0m [?1l>
+]2;styles]1;styles[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;lsguest.css   landing.css user.css
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=aa guest.css[1m [0m[0m [?1l>
+]2;atom . guest.css]1;a[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=ggit pull orign in master[?1l>
+]2;git pull origin master]1;gitFrom https://github.com/seatonm123/Client
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=ggit pull e team master[?1l>
+]2;git pull team master]1;gitremote: Counting objects: 3, done.[K
+remote: Compressing objects:  33% (1/3)   [Kremote: Compressing objects:  66% (2/3)   [Kremote: Compressing objects: 100% (3/3)   [Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From https://github.com/stackOfAllTrades/Client
+ * branch            master     -> FETCH_HEAD
+   ec822e9..e702b69  master     -> team/master
+Updating ec822e9..e702b69
+error: Your local changes to the following files would be overwritten by merge:
+	guestDashboard.html
+	userDashboard.html
+Please commit your changes or stash them before you merge.
+Aborting
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;31m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=ggit stash[?1l>
+]2;git stash]1;gitSaved working directory and index state WIP on master: ec822e9 Merge pull request #25 from gmoratorio/master
+HEAD is now at ec822e9 Merge pull request #25 from gmoratorio/master
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=ggit pull or  team master[?1l>
+]2;git pull team master]1;gitFrom https://github.com/stackOfAllTrades/Client
+ * branch            master     -> FETCH_HEAD
+Updating ec822e9..e702b69
+Fast-forward
+ guestDashboard.html | 140 [32m+++++++++++++++++++++++++[m[31m----------------[m
+ userDashboard.html  | 175 [32m++++++++++++++++++++++++++++++[m[31m----------------------[m
+ 2 files changed, 188 insertions(+), 127 deletions(-)
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;lsguest.css   landing.css user.css
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=...[?1l>
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;ls404.html            firebase.json       index.html          [1m[36mstyles[39;49m[0m
+README.md           guestDashboard.html index.js            typescript
+[1m[36mbootstrap-mockup[39;49m[0m    [1m[36mimages[39;49m[0m              [1m[36mscripts[39;49m[0m             userDashboard.html
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=oopen g
+[J[0mgopher://            [JguestDashboard.html[J[A[0m[27m[24m[25Copen g[Kopher://
+[J[7mgopher://          [0m  [JguestDashboard.html[J[A[0m[27m[24m[25Copen gopher://[K
+[7mgopher://          [0m  [7mgopher://          [0m  [A[0m[27m[24m[25Copen gopher://[K[8DuestDashboard.html
+[21C[7mguestDashboard.html[0mgopher://            [A[0m[27m[24m[25Copen guestDashboard.html[K
+[J[A[49C[1m [0m[0m [?1l>
+[J]2;open guestDashboard.html]1;open[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;ls404.html            firebase.json       index.html          [1m[36mstyles[39;49m[0m
+README.md           guestDashboard.html index.js            typescript
+[1m[36mbootstrap-mockup[39;49m[0m    [1m[36mimages[39;49m[0m              [1m[36mscripts[39;49m[0m             userDashboard.html
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Trades/Client]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client[0m[27m[24m[J[01;32m➜  [36mClient[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=sscript    s  sstyles[1m/[0m[0m [?1l>
+]2;styles]1;styles[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;lsguest.css   landing.css user.css
+[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=aa guest.css[1m [0m[0m [?1l>
+]2;atom . guest.css]1;a[1m[7m%[27m[1m[0m                                                                                ]2;MattRSeaton@Matts-MacBook-Pro]1;..Client/styles]7;file://Matts-MacBook-Pro.local/Users/MattRSeaton/stackOfAllTrades/Client/styles[0m[27m[24m[J[01;32m➜  [36mstyles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=

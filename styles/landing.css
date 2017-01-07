@@ -20,9 +20,8 @@ time, mark, audio, video {
 }
 
 body {
-  margin-top: 3%;
-
   background-color: #000B12;
+	font-family: PT Sans Narrow;
 }
 
 section.module:last-child {
@@ -58,18 +57,21 @@ section.module.parallax {
   background-attachment: fixed;
   background-size: cover;
   display: flex;
+	flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 section.module.parallax h1 {
-
-	color: #000B12
+	color: white;
+	text-shadow: 1em 1em 0.04em black;
   font-size: 3vh;
 	text-transform: uppercase;
   text-align: center;
 	font-family: Renault;
+	margin-top: 9.2%;
 }
 section.module.parallax-1 {
+	padding-right: 1.5%;
   background-image: url("../images/Denver.jpeg");
 }
 section.module.parallax-2 {
@@ -113,15 +115,79 @@ section.module.parallax-4 {
   }
 
 
-}
-
 #logo-container {
-  margin-top: 8%;
+  margin-top: 2%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100vw;
   height: 10vh;
   /*background-color: black;*/
+}
+
+img {
+	width: 2em;
+	height: 2em;
+	box-shadow: 1px 1px 1px black;
+}
+
+.link-hold {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000B12;
+	padding: 0.5%;
+	padding-top: 0.6%;
+	padding-left: 1%;
+	border-radius: 3%;
+	border: 1px solid #000B12;
+	width: 24vw;
+	box-shadow: 3px 3px 2px black;
+}
+
+.link-hold:hover{
+	background-color: white;
+}
+
+.button-label {
+	text-align: center;
+	align-self: center;
+	font-size: 0.2em;
+	margin-right: 9.9vw;
+	background: none;
+}
+
+.linkButton {
+	background: none;
+	margin: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	border: 1px solid #55ADAD;
+	padding: 1%;
+}
+
+.blurb {
+	font-family: PT Sans Narrow !important;
+	color: #C7CAC9 !important;
+	margin-top: 3%;
+}
+
+.find {
+	margin-bottom: 90%;
+}
+
+.just-shadow {
+	position: absolute;
+	top: 29.5%;
+	text-shadow: 4px 4px 2px black !important;
+}
+
+.h1-hold {
+	margin-top: 4.2%;
+	margin-right: 7%;
 }
