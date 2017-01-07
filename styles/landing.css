@@ -67,7 +67,7 @@ section.module.parallax h1 {
 	text-transform: uppercase;
   text-align: center;
 	font-family: Renault;
-	margin-top: 9.2%;
+	margin-top: 9.7%;
 }
 section.module.parallax-1 {
 	padding-right: 1.5%;
@@ -241,4 +241,5 @@ input {
 
 .signUpButton:hover {
 	background-color: white;
+
 }
