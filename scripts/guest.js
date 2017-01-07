@@ -11,16 +11,16 @@ $(document).ready(function() {
     $.get(categoryURL)
         .then((data) => {
 
-          data = data.sort(function compare(categoryA, categoryB) {
-              if (categoryA.name < categoryB.name) { //a is less than b by some ordering criterion
-                  return -1;
-              }
-              if (categoryA.name > categoryB.name) { //a is greater than b by the ordering criterion
-                  return 1;
-              }
-              // a must be equal to b
-              return 0;
-          });
+          // data = data.sort(function compare(categoryA, categoryB) {
+          //     if (categoryA.name < categoryB.name) { //a is less than b by some ordering criterion
+          //         return -1;
+          //     }
+          //     if (categoryA.name > categoryB.name) { //a is greater than b by the ordering criterion
+          //         return 1;
+          //     }
+          //     // a must be equal to b
+          //     return 0;
+          // });
 
             categoryArray = data;
             for (var i = 0; i < data.length; i++) {
