@@ -36,7 +36,14 @@
          })
          .then((cleanEventArray) => {
              globalEventArray = cleanEventArray;
+            //  console.log(globalEventArray);
              populateEvents(cleanEventArray)
+         })
+         .then((data) => {
+            // console.log(globalEventArray);
+            let imageData = globalEventArray;
+            // console.log(imageData);
+             populateImages(imageData);
          })
          .catch((error) => {
              console.log(error);
@@ -70,6 +77,7 @@
          // a must be equal to b
          return 0;
      });
+    //  console.log(returnData);
      return returnData;
  }
 
@@ -87,6 +95,11 @@
      const template = Handlebars.compile(source);
      const html = template(event);
      parent.append(html);
+ }
+
+ function populateImages(imageData) {
+     console.log(imageData);
+     
  }
 
  function getUserInfo() {
@@ -109,7 +122,7 @@
 
  function setGlobalEventHandlers() {
      $('#logout').click(() => {
-       $.get(`${URL}/logout`);
+         $.get(`${URL}/logout`);
      });
  }
 
