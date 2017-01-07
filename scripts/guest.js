@@ -10,6 +10,18 @@ $(document).ready(function() {
 
     $.get(categoryURL)
         .then((data) => {
+
+          // data = data.sort(function compare(categoryA, categoryB) {
+          //     if (categoryA.name < categoryB.name) { //a is less than b by some ordering criterion
+          //         return -1;
+          //     }
+          //     if (categoryA.name > categoryB.name) { //a is greater than b by the ordering criterion
+          //         return 1;
+          //     }
+          //     // a must be equal to b
+          //     return 0;
+          // });
+
             categoryArray = data;
             for (var i = 0; i < data.length; i++) {
                 var categoryName = data[i].name;
@@ -20,106 +32,33 @@ $(document).ready(function() {
             }
         })
 
-    // $.get(eventURL, function(data) {
-    //
-    //
-    //
-    //
-    //     $('.panel').click(function() {
-    //         var thisId = parseInt($(this).children(':first').text());
-    //         var thisEvent = data[thisId];
-    //
-    //         var name = null;
-    //         if (thisEvent.event_name) {
-    //             name = thisEvent.event_name;
-    //         } else {
-    //             name = "This event has no name.";
-    //         }
-    //
-    //         var date = null;
-    //         if (thisEvent.date) {
-    //             date = normalDate(thisEvent.date);
-    //         } else {
-    //             date = "Event Date TBD";
-    //         }
-    //
-    //         var time = null;
-    //         if (thisEvent.time) {
-    //             time = thisEvent.time;
-    //         } else {
-    //             date = "Event Time TBD";
-    //         }
-    //
-    //         var description = null;
-    //         if (thisEvent.description) {
-    //             description = thisEvent.description;
-    //         } else {
-    //             description = "No one has bothered to describe this Event!";
-    //         }
-    //
-    //         var price = null;
-    //         if (thisEvent.price) {
-    //             price = thisEvent.price;
-    //         } else {
-    //             price = "This event has no price posted";
-    //         }
-    //
-    //         var address = null;
-    //         if (thisEvent.address) {
-    //             address = thisEvent.address;
-    //         } else {
-    //             address = "The address for this event has not been listed.";
-    //         }
-    //
-    //         var eventLink = thisEvent.event_link;
-    //
-    //         $('main').empty();
-    //         var $id = $('<p class="hidden">' + thisId + '</p>');
-    //         var $bigDiv = $('<div class="jumbotron"></>');
-    //         var $flagLink = $('<div class="flag-link"></div>');
-    //         var $flag = $('<button type="button" class="btn btn-primary"><p class="flagger">w</p></button>');
-    //         var $backLink = $('<a class="btn btn-primary" id="back-button" href="index.html">Back to List</a>');
-    //         var $bigName = $('<h3 class="big-title">' + name + '</h3>');
-    //         var $bigDate = $('<p class="big-date">' + date + ' at ' + time + '</p>');
-    //         var $description = $('<p class="big-description">' + description + '</p>');
-    //         var $price = $('<p class="price"><small>' + price + "</p>");
-    //         var $bigLink = $('<a class="btn btn-primary btn-lg" class="link-button" href="' + eventLink + '">Click this link for further details</a>');
-    //         var $address = $('<p class="address">' + address + '</p>');
-    //
-    //         $('main').append($bigDiv);
-    //         $($bigDiv).append($id);
-    //         $($flagLink).append($backLink);
-    //         $($flagLink).append($flag);
-    //         $($bigDiv).append($flagLink);
-    //         $($bigDiv).append($bigName);
-    //         $($bigDiv).append($bigDate);
-    //         $($bigDiv).append($description);
-    //         $($bigDiv).append($address);
-    //         $($bigDiv).append($price);
-    //         $($bigDiv).append($bigLink);
-    //     });
-    // });
 
     $.get(eventURL)
-    .then((data)=>{
-      data = data.sort(function compare(objectA, objectB) {
-          if (objectA.date < objectB.date) { //a is less than b by some ordering criterion
-              return -1;
-          }
-          if (objectA.date > objectB.date) { //a is greater than b by the ordering criterion
-              return 1;
-          }
-          // a must be equal to b
-          return 0;
-      });
+        .then((data) => {
+            data = data.sort(function compare(objectA, objectB) {
+                if (objectA.date < objectB.date) { //a is less than b by some ordering criterion
+                    return -1;
+                }
+                if (objectA.date > objectB.date) { //a is greater than b by the ordering criterion
+                    return 1;
+                }
+                // a must be equal to b
+                return 0;
+            });
 
-      eventArray = data;
+            eventArray = data;
 
-      for (var i = 0; i < data.length; i++) {
-          var thisEvent = data[i];
-          populateEvent(thisEvent, i);
-      }
-    })
+            for (var i = 0; i < data.length; i++) {
+                var thisEvent = data[i];
+                populateEvent(thisEvent, i);
+            }
+        })
+        .catch((error) => {
+            if (res.status === 500) {
+                alert("Sorry... our bad. Reloading the page.");
+                window.location.reload();
+            }
+        })
 
 
     $('#subButton').click(function() {
@@ -323,16 +262,13 @@ function createClickHandler(id) {
         $(`#category-${id}`).addClass('selected');
         $('#listOne').empty();
         for (var i = 0; i < eventArray.length; i++) {
-            // debugger;
             let shouldAppend = false;
             const thisEvent = eventArray[i];
-            for (var j = 0; j < categoryArray.length; j++) {
-                const thisCategory = categoryArray[id - 1];
-                for (var z = 0; z < thisEvent.categories.length; z++) {
-                    const thisEventCategory = thisEvent.categories[z];
-                    if (thisEventCategory === thisCategory.name) {
-                        shouldAppend = true;
-                    }
+            const thisCategory = categoryArray[id - 1];
+            for (var j = 0; j < thisEvent.categories.length; j++) {
+                const thisEventCategory = thisEvent.categories[j];
+                if (thisEventCategory === thisCategory.name) {
+                    shouldAppend = true;
                 }
             }
             if (shouldAppend) {
