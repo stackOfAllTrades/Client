@@ -1,4 +1,4 @@
- const URL = 'https://stack-of-all-trade.herokuapp.com';
+ const URL = SERVER_URL;
  $(document).ready(function() {
      const data = getData()
          .then((data) => {
