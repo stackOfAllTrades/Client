@@ -70,17 +70,17 @@ section.module.parallax h1 {
 	font-family: Renault;
 }
 section.module.parallax-1 {
-  background-image: url("./Denver.jpeg");
+  background-image: url("../images/Denver.jpeg");
 }
 section.module.parallax-2 {
-  background-image: url("./Capitol.jpeg");
+  background-image: url("../images/Capitol.jpeg");
 }
 section.module.parallax-3 {
 
-  background-image: url("./Mountain.jpg");
+  background-image: url("../images/Mountain.jpg");
 }
 section.module.parallax-4 {
-  background-image: url("./Rave.jpeg");
+  background-image: url("../images/Rave.jpeg");
 }
 
 @media all and (min-width: 600px) {
