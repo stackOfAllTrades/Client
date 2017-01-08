@@ -12,7 +12,7 @@ function getClientBaseURL() {
     if (window.location.hostname == "localhost") {
         return "http://localhost:8080"
     } else {
-        return "https://a-denver-to-remember.firebaseapp.com"
+        return "https://www.denvertoremember.com"
     }
 }
 
