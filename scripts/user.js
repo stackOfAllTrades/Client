@@ -193,7 +193,7 @@
              })
          }
 
-         if (shouldPopulate === true) {
+         if (shouldPopulate) {
              populateEvent(event);
          }
 

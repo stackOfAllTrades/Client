@@ -10,18 +10,6 @@ $(document).ready(function() {
 
     $.get(categoryURL)
         .then((data) => {
-
-          // data = data.sort(function compare(categoryA, categoryB) {
-          //     if (categoryA.name < categoryB.name) { //a is less than b by some ordering criterion
-          //         return -1;
-          //     }
-          //     if (categoryA.name > categoryB.name) { //a is greater than b by the ordering criterion
-          //         return 1;
-          //     }
-          //     // a must be equal to b
-          //     return 0;
-          // });
-
             categoryArray = data;
             for (var i = 0; i < data.length; i++) {
                 var categoryName = data[i].name;
@@ -30,6 +18,7 @@ $(document).ready(function() {
                 $('#listTwo').append($listItem);
                 createClickHandler(categoryId);
             }
+            createClickHandler("all");
         })
 
 
@@ -257,22 +246,27 @@ function normalDate(string) {
 
 function createClickHandler(id) {
     $(`#category-${id}`).click(function() {
-        console.log('clicked' + id);
         $(`.list-group-item`).removeClass('selected');
         $(`#category-${id}`).addClass('selected');
         $('#listOne').empty();
+        let thisCategory = null;
+
         for (var i = 0; i < eventArray.length; i++) {
             let shouldAppend = false;
             const thisEvent = eventArray[i];
-            const thisCategory = categoryArray[id - 1];
-            for (var j = 0; j < thisEvent.categories.length; j++) {
-                const thisEventCategory = thisEvent.categories[j];
-                if (thisEventCategory === thisCategory.name) {
-                    shouldAppend = true;
+            if (id !== "all") {
+                thisCategory = categoryArray[id - 1];
+                for (var j = 0; j < thisEvent.categories.length; j++) {
+                    const thisEventCategory = thisEvent.categories[j];
+                    if (thisEventCategory === thisCategory.name) {
+                        shouldAppend = true;
+                    }
                 }
+            } else {
+                shouldAppend = true;
             }
+
             if (shouldAppend) {
-                console.log(thisEvent.event_name);
                 populateEvent(thisEvent, i);
             }
         }
