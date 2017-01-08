@@ -193,7 +193,7 @@
              })
          }
 
-         if (shouldPopulate === true) {
+         if (shouldPopulate) {
              populateEvent(event);
          }
 
@@ -210,9 +210,7 @@
      const filteredEventArray = eventArray.filter((event) => {
          return event.isValid;
      });
-
      return filteredEventArray;
-
  }
 
  function normalizeData(event) {
@@ -234,8 +232,7 @@
      if (event.date) {
          try {
              diff = Sugar.Date('today').hoursUntil(event.date).raw;
-             //  diff = 12;
-             if (diff > 0) {
+             if (diff >= 0) {
                  possibleDate = Sugar.Date(event.date).format('{Dow}, {Month} {dd}, {yyyy}').raw;
                  event.isValid = true;
              } else {
@@ -247,7 +244,7 @@
          }
          event.date = possibleDate;
      } else {
-         date = "TBD";
+         event.isValid = false;
      }
 
      if (!event.time) {
