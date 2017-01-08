@@ -22,6 +22,7 @@
 
      getEvents()
          .then((eventArray) => {
+           console.log(eventArray.length);
              return sortEvents(eventArray);
          })
          .then((sortedEventArray) => {
@@ -36,6 +37,7 @@
          })
          .then((cleanEventArray) => {
              globalEventArray = cleanEventArray;
+             console.log(globalEventArray.length);
              populateEvents(cleanEventArray)
          })
          .then((data) => {

@@ -38,9 +38,7 @@ $(document).ready(function() {
 
             eventArray = data;
             eventArray = normalizeArray(eventArray);
-            console.log(eventArray.length);
             eventArray = filterPastEvents(eventArray);
-            console.log(eventArray.length);
             for (var i = 0; i < eventArray.length; i++) {
                 var thisEvent = eventArray[i];
                 populateEvent(thisEvent, i);
