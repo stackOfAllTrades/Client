@@ -36,13 +36,13 @@
          })
          .then((cleanEventArray) => {
              globalEventArray = cleanEventArray;
-            //  console.log(globalEventArray);
+             //  console.log(globalEventArray);
              populateEvents(cleanEventArray)
          })
          .then((data) => {
-            // console.log(globalEventArray);
-            let imageData = globalEventArray;
-            // console.log(imageData);
+             // console.log(globalEventArray);
+             let imageData = globalEventArray;
+             // console.log(imageData);
              populateImages(imageData);
          })
          .catch((error) => {
@@ -77,7 +77,7 @@
          // a must be equal to b
          return 0;
      });
-    //  console.log(returnData);
+     //  console.log(returnData);
      return returnData;
  }
 
@@ -98,21 +98,32 @@
  }
 
  function populateImages(imageData) {
-     for(var i = 0; i < imageData.length; i++){
-         let $imgSrc = `${imageData[i].image_link}`;
-         let $captionSrc = `${imageData[i].event_name}`;
-        //  console.log($captionSrc);
-        //  console.log($imgSrc);
-         let $div = $('<div class="item active"></div>');
-         let $img = $(`<div class="fill" style="background-image:url(${$imgSrc})"></div>`);
-         let $caption = $(`<div class="carousel-caption"></div>`);
-         let $captionText = $(`<h2>${$captionSrc}</h2>`);
-        //  console.log($captionText);
-         $(`.carousel-inner`).append($div);
-         $($div).append($img);
-         $($div).append($caption);
-         $($caption).append($captionText);
+     for (var j = 0; j < 3; j++) {
+         let index = null;
+         let thisEvent = null;
+         let image_link = null;
+         let counter = 0;
+         while (image_link === null && (counter < 200)) {
+             index = generateRandomIndex(imageData.length);
+             thisEvent = imageData[index];
+             image_link = thisEvent.image_link;
+             console.log(index);
+             counter += 1;
+         }
+
+
+         const $thisCarouselCard = $(`#image-card-${j}`);
+         const $thisH2 = $(`#caption-${j}`);
+         $thisH2.text(`${thisEvent.event_name}`);
+         $thisCarouselCard.css(`background-image`, `url(${image_link})`);
+         console.log(thisEvent.image_link);
+
      }
+ }
+
+ function generateRandomIndex(max) {
+     const index = Math.floor(Math.random() * max);
+     return index;
  }
 
  function getUserInfo() {
