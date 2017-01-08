@@ -19,6 +19,7 @@ $(document).ready(function() {
                 createClickHandler(categoryId);
             }
             createClickHandler("all");
+            createGoogleButtonHandler();
         })
 
 
@@ -186,6 +187,13 @@ function normalizeArray(array) {
 }
 
 
+
+ function createGoogleButtonHandler() {
+     $loginButton = $("#sign-in");
+     $loginButton.attr('href', `${SERVER_URL}/auth/google`);
+ }
+
+
 function normalizeData(event) {
 
     if (!event.source_name) {
@@ -200,26 +208,27 @@ function normalizeData(event) {
         event.description = "Description Unavailable"
     }
 
-    let date = null;
-    let possibleDate = null;
-    if (event.date) {
-        try {
-            diff = Sugar.Date('today').hoursUntil(event.date).raw;
-            if (diff >= 0) {
-                possibleDate = Sugar.Date(event.date).format('{Dow}, {Month} {dd}, {yyyy}').raw;
-                event.isValid = true;
-            } else {
-                possibleDate = event.date;
-                event.isValid = false;
-            }
-        } catch (err) {
-            possibleDate = event.date;
-            event.isValid = false;
-        }
-        event.date = possibleDate;
-    } else {
-        event.isValid = false;
-    }
+    // let date = null;
+    // let possibleDate = null;
+    // if (event.date) {
+    //     try {
+    //         diff = Sugar.Date('today').hoursUntil(event.date).raw;
+    //         if (diff >= 0) {
+    //             possibleDate = Sugar.Date(event.date).format('{Dow}, {Month} {dd}, {yyyy}').raw;
+    //             event.isValid = true;
+    //         } else {
+    //             possibleDate = event.date;
+    //             event.isValid = false;
+    //         }
+    //     } catch (err) {
+    //         possibleDate = event.date;
+    //         event.isValid = false;
+    //     }
+    //     event.date = possibleDate;
+    // } else {
+    //     event.isValid = false;
+    // }
+    event.isValid = true;
 
     if (!event.time) {
         event.time = "TBD";
