@@ -99,25 +99,13 @@ section.module.parallax-4 {
 }
 
 .first-title {
-<<<<<<< HEAD
-    width: 100%;
-    margin-left: 3%;
-    text-shadow: 0.05em 0.05em 0.04em black;
-    width: 100vw;
-    margin-bottom: 7%;
-    font family: PT Sans narrow;
-}
-=======
 	width: 100%;
 	margin-left: 3%;
 	text-shadow: 0.05em 0.05em 0.04em black;
 	width: 100vw;
 	margin-bottom: 7%;
 	font family: PT Sans narrow;
-
   }
-
->>>>>>> 09a2e69c2e459775d46447fe36f107d5b8fbc0d5
 
   section.module.parallax h1 {
     font-size: 6em;
@@ -249,33 +237,12 @@ img {
 }
 
 #guest-button {
-<<<<<<< HEAD
     margin-top: 2%;
     display: flex;
     justify-content: center;
-    display: flex;
     height: 3.7vh;
-    cursor: pointer;
-    cursor: hand;
-}
-
-#guest-button:hover {
-    cursor: pointer;
-    cursor: hand;
-}
-
-#link-button.button-label {
-    margin: auto;
-    cursor: pointer;
-    cursor: hand;
-=======
-	display: flex;
-	justify-content: center;
-	height: 3.7vh;
-	margin-top: 2%;
 }
 
 #link-button.button-label {
 	margin: auto;
->>>>>>> 09a2e69c2e459775d46447fe36f107d5b8fbc0d5
 }
