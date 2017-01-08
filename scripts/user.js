@@ -148,6 +148,7 @@
      $('#logout').click(() => {
          $.get(`${URL}/logout`);
      });
+     createCategoriesEventHandler("all");
  }
 
 
@@ -179,17 +180,25 @@
  }
 
  function filterCategories(categoryID) {
-     const categoryName = globalCategoryArray[categoryID - 1].name;
-     //  debugger;
+     let categoryName = null;
+
+     if (categoryID !== "all") {
+         categoryName = globalCategoryArray[categoryID - 1].name;
+     }
+
      globalEventArray.forEach((event) => {
          let shouldPopulate = false;
          const eventCategories = event.categories;
+         if (categoryID == "all") {
+             shouldPopulate = true;
+         } else {
+             eventCategories.forEach((category) => {
+                 if (categoryName == category) {
+                     shouldPopulate = true;
+                 }
+             })
+         }
 
-         eventCategories.forEach((category) => {
-             if (categoryName == category) {
-                 shouldPopulate = true;
-             }
-         })
          if (shouldPopulate === true) {
              populateEvent(event);
          }
