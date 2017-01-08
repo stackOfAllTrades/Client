@@ -67,7 +67,7 @@ section.module.parallax h1 {
 	margin-top: 11%;
 }
 section.module.parallax-1 {
-  background-image: url("../images/Optimized-Denver.jpeg");
+    background-image: url("../images/Optimized-Denver.jpeg");
 }
 section.module.parallax-2 {
   background-image: url("../images/Optimized-Capitol.jpeg");
@@ -105,9 +105,7 @@ section.module.parallax-4 {
 	width: 100vw;
 	margin-bottom: 7%;
 	font family: PT Sans narrow;
-
   }
-
 
   section.module.parallax h1 {
     font-size: 6em;
@@ -199,6 +197,7 @@ img {
 #content3 {
 	padding-bottom: 2%;
 }
+
 ::-webkit-input-placeholder {
 	color: #000B12;
 }
@@ -238,10 +237,10 @@ img {
 }
 
 #guest-button {
-	display: flex;
-	justify-content: center;
-	height: 3.7vh;
-	margin-top: 2%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    height: 3.7vh;
 }
 
 #link-button.button-label {
