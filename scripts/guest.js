@@ -11,9 +11,9 @@ $(document).ready(function() {
     $.get(categoryURL)
         .then((data) => {
             categoryArray = data;
-            for (var i = 0; i < data.length; i++) {
-                var categoryName = data[i].name;
-                var categoryId = data[i].id;
+            for (var i = 0; i < categoryArray.length; i++) {
+                var categoryName = categoryArray[i].name;
+                var categoryId = categoryArray[i].id;
                 var $listItem = $(`<div class="list-group-item" id="category-${categoryId}" val="${categoryId}">${categoryName}</div>`);
                 $('#listTwo').append($listItem);
                 createClickHandler(categoryId);
@@ -36,9 +36,12 @@ $(document).ready(function() {
             });
 
             eventArray = data;
-
-            for (var i = 0; i < data.length; i++) {
-                var thisEvent = data[i];
+            eventArray = normalizeArray(eventArray);
+            console.log(eventArray);
+            eventArray = filterPastEvents(eventArray);
+            console.log(eventArray);
+            for (var i = 0; i < eventArray.length; i++) {
+                var thisEvent = eventArray[i];
                 populateEvent(thisEvent, i);
             }
         })
@@ -52,82 +55,10 @@ $(document).ready(function() {
 
     $('#subButton').click(function() {
 
-        for (var i = 0; i < data.length; i++) {
+        for (var i = 0; i < eventArray.length; i++) {
 
-            //*Mark - Took away cardId and just used i
-            // var cardId = i;
-            var thisEvent = data[i];
-
-            //*Mark - Validating that the properties are populated
-            var sourceName = null;
-            if (thisEvent.date) {
-                sourceName = thisEvent.sourceName;
-            } else {
-                date = "Indeterminate Date";
-            }
-
-            var eventLink = null;
-            if (thisEvent.event_link) {
-                eventLink = thisEvent.event_link;
-            } else {
-                eventLink = "No Link Available";
-            }
-
-            var description = null;
-            if (thisEvent.description) {
-                description = thisEvent.description;
-            } else {
-                description = "Description Unavailable";
-            }
-
-            var date = null;
-            if (thisEvent.date) {
-                date = normalDate(thisEvent.date);
-            } else {
-                date = "Date: TBD";
-            }
-
-            var time = null;
-            if (thisEvent.time) {
-                time = thisEvent.time;
-            } else {
-                time = "Time: TBD";
-            }
-
-            var eventName = null;
-            if (thisEvent.event_name) {
-                eventName = thisEvent.event_name;
-            } else {
-                eventName = "Event is Unnamed";
-            }
-
-            var price = null;
-            if (thisEvent.price) {
-                price = thisEvent.price;
-            } else {
-                price = "Price: TBD";
-            }
-
-            var imageLink = null;
-            if (thisEvent.imageLink) {
-                imageLink = thisEvent.imageLink;
-            } else {
-                imageLink = "Image Unavailable";
-            }
-
-            var location = null;
-            if (thisEvent.location) {
-                location = thisEvent.location;
-            } else {
-                location = "Location: TBD";
-            }
-
-            var address = null;
-            if (thisEvent.address) {
-                address = thisEvent.address;
-            } else {
-                address = "Address: TBD";
-            }
+            var thisEvent = eventArray[i];
+            thisEvent = normalizeData(thisEvent);
 
             var $id = $('<p class="hidden">' + i + '</p>');
             var $card = $('<div class="panel panel-default" + id="card' + (i + 1) + '"></div>');
@@ -136,7 +67,7 @@ $(document).ready(function() {
             }
 
             var $heading = $('<div class="panel-heading"><h3 class="panel-title">' + thisEvent.event_name + '</h3></div>');
-            var $body = $('<div class="panel-body"">' + date + ' at ' + time + '</div>');
+            var $body = $('<div class="panel-body"">' + thisEvent.date + ' at ' + thisEvent.time + '</div>');
             $($card).append($id);
             $($card).append($heading);
             $($card).append($body);
@@ -144,51 +75,9 @@ $(document).ready(function() {
 
             $('.panel').click(function() {
                 var thisId = parseInt($(this).children(':first').text());
-                var thisEvent = data[thisId];
+                var thisEvent = eventArray[thisId];
+                thisEvent = normalizeData(thisEvent);
 
-                var name = null;
-                if (thisEvent.event_name) {
-                    name = thisEvent.event_name;
-                } else {
-                    name = "This event has no name.";
-                }
-
-                var date = null;
-                if (thisEvent.date) {
-                    date = normalDate(thisEvent.date);
-                } else {
-                    date = "Event Date TBD";
-                }
-
-                var time = null;
-                if (thisEvent.time) {
-                    time = thisEvent.time;
-                } else {
-                    date = "Event Time TBD";
-                }
-
-                var description = null;
-                if (thisEvent.description) {
-                    description = thisEvent.description;
-                } else {
-                    description = "No one has bothered to describe this Event!";
-                }
-
-                var price = null;
-                if (thisEvent.price) {
-                    price = thisEvent.price;
-                } else {
-                    price = "This event has no price posted";
-                }
-
-                var address = null;
-                if (thisEvent.address) {
-                    address = thisEvent.address;
-                } else {
-                    address = "The address for this event has not been listed.";
-                }
-
-                var eventLink = thisEvent.event_link;
 
                 $('main').empty();
                 var $id = $('<p class="hidden">' + thisId + '</p>');
@@ -196,12 +85,12 @@ $(document).ready(function() {
                 var $flagLink = $('<div class="flag-link"></div>');
                 var $flag = $('<button type="button" class="btn btn-primary"><p class="flagger">w</p></button>');
                 var $backLink = $('<a class="btn btn-primary" id="back-button" href="index.html">Back to List</a>');
-                var $bigName = $('<h3 class="big-title">' + name + '</h3>');
-                var $bigDate = $('<p class="big-date">' + date + ' at ' + time + '</p>');
-                var $description = $('<p class="big-description">' + description + '</p>');
-                var $price = $('<p class="price"><small>' + price + "</p>");
-                var $bigLink = $('<a class="btn btn-primary btn-lg" class="link-button" href="' + eventLink + '">Click this link for further details</a>');
-                var $address = $('<p class="address">' + address + '</p>');
+                var $bigName = $('<h3 class="big-title">' + thisEvent.event_name + '</h3>');
+                var $bigDate = $('<p class="big-date">' + thisEvent.date + ' at ' + thisEvent.time + '</p>');
+                var $description = $('<p class="big-description">' + thisEvent.description + '</p>');
+                var $price = $('<p class="price"><small>' + thisEvent.price + "</p>");
+                var $bigLink = $('<a class="btn btn-primary btn-lg" class="link-button" href="' + thisEvent.event_link + '">Click this link for further details</a>');
+                var $address = $('<p class="address">' + thisEvent.address + '</p>');
 
                 $('main').append($bigDiv);
                 $($bigDiv).append($id);
@@ -224,25 +113,10 @@ $(document).ready(function() {
 
 
 
-function parseId(string) {
-    var noLetter = string.replace(/[a-z]/g, '');
-    console.log(noLetter);
-}
-
-function normalDate(string) {
-    if (string.substr(0, 3) === "201") {
-        var justDate = string.substr(0, 10);
-        var stringArray = justDate.split('-');
-        stringArray.push(stringArray[0]);
-        stringArray.shift(stringArray[0]);
-        stringArray.join('-');
-        var backString = stringArray.toString();
-        var thisDate = backString.replace(/,/g, '/');
-        return thisDate;
-    } else {
-        return string;
-    }
-}
+// function parseId(string) {
+//     var noLetter = string.replace(/[a-z]/g, '');
+//     console.log(noLetter);
+// }
 
 function createClickHandler(id) {
     $(`#category-${id}`).click(function() {
@@ -275,74 +149,8 @@ function createClickHandler(id) {
 
 function populateEvent(thisEvent, i) {
     var sourceName = null;
-    if (thisEvent.date) {
-        sourceName = thisEvent.sourceName;
-    } else {
-        date = "Indeterminate Date";
-    }
+    thisEvent = normalizeData(thisEvent);
 
-    var eventLink = null;
-    if (thisEvent.event_link) {
-        eventLink = thisEvent.event_link;
-    } else {
-        eventLink = "No Link Available";
-    }
-
-    var description = null;
-    if (thisEvent.description) {
-        description = thisEvent.description;
-    } else {
-        description = "Description Unavailable";
-    }
-
-    var date = null;
-    if (thisEvent.date) {
-        date = normalDate(thisEvent.date);
-    } else {
-        date = "Date: TBD";
-    }
-
-    var time = null;
-    if (thisEvent.time) {
-        time = thisEvent.time;
-    } else {
-        time = "Time: TBD";
-    }
-
-    var eventName = null;
-    if (thisEvent.event_name) {
-        eventName = thisEvent.event_name;
-    } else {
-        eventName = "Event is Unnamed";
-    }
-
-    var price = null;
-    if (thisEvent.price) {
-        price = thisEvent.price;
-    } else {
-        price = "Price: TBD";
-    }
-
-    var imageLink = null;
-    if (thisEvent.imageLink) {
-        imageLink = thisEvent.imageLink;
-    } else {
-        imageLink = "Image Unavailable";
-    }
-
-    var location = null;
-    if (thisEvent.location) {
-        location = thisEvent.location;
-    } else {
-        location = "Location: TBD";
-    }
-
-    var address = null;
-    if (thisEvent.address) {
-        address = thisEvent.address;
-    } else {
-        address = "Address: TBD";
-    }
 
     var $id = $('<p class="hidden">' + i + '</p>');
     var $card = $('<div class="panel panel-default" + id="card' + (i + 1) + '"></div>');
@@ -351,11 +159,97 @@ function populateEvent(thisEvent, i) {
     }
 
     var $heading = $('<div class="panel-heading"><h3 class="panel-title">' + thisEvent.event_name + '</h3></div>');
-    var $body = $('<div class="panel-body"">' + date + ' at ' + time + '</div>');
+    var $body = $('<div class="panel-body"">' + thisEvent.date + ' at ' + thisEvent.time + '</div>');
     $($card).append($id);
     $($card).append($heading);
     $($card).append($body);
 
     $('#listOne').append($card);
 
+}
+
+function filterPastEvents(eventArray) {
+    const filteredEventArray = eventArray.filter((event) => {
+        return event.isValid;
+    });
+    return filteredEventArray;
+
+}
+
+function normalizeArray(array) {
+    // console.log(array)
+    const normalizedArray = array.map((event) => {
+        return normalizeData(event);
+    });
+    // console.log(normalizedArray);
+    return normalizedArray;
+}
+
+
+function normalizeData(event) {
+
+    if (!event.source_name) {
+        event.source_name = "No Source Name Specified";
+    }
+
+    if (!event.event_link) {
+        event.event_link = "No Link Available";
+    }
+
+    if (!event.description) {
+        event.description = "Description Unavailable"
+    }
+
+    let date = null;
+    let possibleDate = null;
+    if (event.date) {
+        try {
+            diff = Sugar.Date('today').hoursUntil(event.date).raw;
+            if (diff >= 0) {
+
+                possibleDate = Sugar.Date(event.date).format('{Dow}, {Month} {dd}, {yyyy}').raw;
+                event.isValid = true;
+            } else {
+                possibleDate = event.date;
+                event.isValid = false;
+            }
+        } catch (err) {
+            possibleDate = event.date;
+            event.isValid = false;
+        }
+        event.date = possibleDate;
+    } else {
+        event.isValid = false;
+    }
+
+    if (!event.time) {
+        event.time = "TBD";
+    }
+
+    if (!event.event_name) {
+        event.event_name = "Event Name Unavailable";
+    }
+
+
+    if (!event.image_link) {
+        //ImageLink deliberately left null
+    }
+
+    if (!event.location) {
+        event.location = "TBD";
+    }
+
+    if (!event.address) {
+        event.address = "TBD";
+    }
+
+    if (!event.price) {
+        event.price = "TBD";
+    }
+
+    if (!event.categories) {
+        event.categories = ["Miscellaneous"];
+    }
+
+    return event;
 }
