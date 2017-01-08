@@ -36,13 +36,10 @@
          })
          .then((cleanEventArray) => {
              globalEventArray = cleanEventArray;
-             //  console.log(globalEventArray);
              populateEvents(cleanEventArray)
          })
          .then((data) => {
-             // console.log(globalEventArray);
              let imageData = globalEventArray;
-             // console.log(imageData);
              populateImages(imageData);
          })
          .catch((error) => {
@@ -77,7 +74,6 @@
          // a must be equal to b
          return 0;
      });
-     //  console.log(returnData);
      return returnData;
  }
 
@@ -107,7 +103,6 @@
              index = generateRandomIndex(imageData.length);
              thisEvent = imageData[index];
              image_link = thisEvent.image_link;
-             console.log(index);
              counter += 1;
          }
 
@@ -116,7 +111,6 @@
          const $thisH2 = $(`#caption-${j}`);
          $thisH2.text(`${thisEvent.event_name}`);
          $thisCarouselCard.css(`background-image`, `url(${image_link})`);
-         console.log(thisEvent.image_link);
 
      }
  }
