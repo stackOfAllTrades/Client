@@ -212,8 +212,7 @@ function normalizeData(event) {
         try {
             diff = Sugar.Date('today').hoursUntil(event.date).raw;
             if (diff >= 0) {
-                // possibleDate = Sugar.Date(event.date).format('{Dow}, {Month} {dd}, {yyyy}').raw;
-                possibleDate = event.date;
+                possibleDate = Sugar.Date(event.date).format('{Dow}, {Month} {dd}, {yyyy}').raw;
                 event.isValid = true;
             } else {
                 possibleDate = event.date;
