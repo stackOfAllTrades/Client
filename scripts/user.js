@@ -244,7 +244,7 @@
          }
          event.date = possibleDate;
      } else {
-         date = "TBD";
+         event.isValid = false;
      }
 
      if (!event.time) {
