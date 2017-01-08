@@ -59,7 +59,7 @@ section.module.parallax h1 {
 }
 
 section.module.parallax-1 {
-  background-image: url("../images/Optimized-Denver.jpeg");
+    background-image: url("../images/Optimized-Denver.jpeg");
 }
 
 section.module.parallax-2 {
@@ -89,14 +89,13 @@ section.module.parallax-4 {
 }
 
 .first-title {
-	width: 100%;
-	margin-left: 3%;
-	text-shadow: 0.05em 0.05em 0.04em black;
-	width: 100vw;
-	margin-bottom: 7%;
-	font family: PT Sans narrow;
-  }
-
+    width: 100%;
+    margin-left: 3%;
+    text-shadow: 0.05em 0.05em 0.04em black;
+    width: 100vw;
+    margin-bottom: 7%;
+    font family: PT Sans narrow;
+}
 
 section.module.parallax h1 {
     font-size: 6em;
@@ -183,6 +182,7 @@ img {
 #content3 {
     padding-bottom: 2%;
 }
+
 ::-webkit-input-placeholder {
     color: #000B12;
 }
@@ -225,10 +225,19 @@ img {
     margin-top: 2%;
     display: flex;
     justify-content: center;
-	  display: flex;
-	  height: 3.7vh;
+    display: flex;
+    height: 3.7vh;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#guest-button:hover {
+    cursor: pointer;
+    cursor: hand;
 }
 
 #link-button.button-label {
-	margin:auto;
+    margin: auto;
+    cursor: pointer;
+    cursor: hand;
 }
