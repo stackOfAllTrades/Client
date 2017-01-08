@@ -98,8 +98,21 @@
  }
 
  function populateImages(imageData) {
-     console.log(imageData);
-     
+     for(var i = 0; i < imageData.length; i++){
+         let $imgSrc = `${imageData[i].image_link}`;
+         let $captionSrc = `${imageData[i].event_name}`;
+        //  console.log($captionSrc);
+        //  console.log($imgSrc);
+         let $div = $('<div class="item active"></div>');
+         let $img = $(`<div class="fill" style="background-image:url(${$imgSrc})"></div>`);
+         let $caption = $(`<div class="carousel-caption"></div>`);
+         let $captionText = $(`<h2>${$captionSrc}</h2>`);
+        //  console.log($captionText);
+         $(`.carousel-inner`).append($div);
+         $($div).append($img);
+         $($div).append($caption);
+         $($caption).append($captionText);
+     }
  }
 
  function getUserInfo() {
