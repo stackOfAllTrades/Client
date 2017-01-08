@@ -46,8 +46,8 @@
              console.log(error);
              console.log(error.status);
              //  if (res.status === 500) {
-              // alert("Sorry... our bad. Reloading the page.");
-             //  window.location.reload();
+             alert("Sorry... our bad. Reloading the page.");
+             window.location.reload();
              //  }
          });
 
@@ -58,8 +58,18 @@
  });
 
  function getEvents() {
-     let data = $.get(`${URL}/userDashboard`);
-     return data;
+     return $.get(`${URL}/userDashboard`)
+         .then((result) => {
+             if (result.checkedAuthorization) {
+                 if (result.authorized === false) {
+                     alert("Sorry, you must log in to view this page.");
+                     window.location.href = "guestDashboard.html";
+                 }
+             } else {
+                 return result;
+             }
+         })
+
  }
 
  function sortEvents(eventData) {
@@ -140,8 +150,15 @@
 
  function setGlobalEventHandlers() {
      $('#logout').click(() => {
-         $.get(`${URL}/logout`);
-     });
+         $.get(`${URL}/logout`)
+             .then((result) => {
+                 if (result.loggedIn === false) {
+                     alert("You have been successfully logged out.");
+                     window.location.href = "index.html"
+                 }
+             })
+     })
+
      createCategoriesEventHandler("all");
  }
 
