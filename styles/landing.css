@@ -102,9 +102,9 @@ section.module.parallax-4 {
 .first-title {
 	width: 100%;
 	margin-left: 3%;
-	margin-top: 9d% !important;
+	margin-top: 11% !important;
 	text-shadow: 0.05em 0.05em 0.04em black;
-
+	width: 100vw;
 		font family: PT Sans narrow;
 
   }
@@ -250,4 +250,22 @@ input {
 .button-p {
 	border: 1px solid #55ADAD;
 	font-size: 1em !important;
+}
+
+.title-hold {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#guest-button {
+	margin-top: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#link-button.button-label {
+	text-align: center !important;
 }
