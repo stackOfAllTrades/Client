@@ -1,243 +1,248 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 body {
-    background-color: #000B12;
-    font-family: PT Sans Narrow;
+  background-color: #000B12;
+	font-family: PT Sans Narrow;
 }
 
 section.module:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
+}
+section.module h2 {
+  font-family: Crimson Text;
+  font-size: 30px;
+	color: #55ADAD;
+	text-shadow: 1px 1px 1px black;
 }
 
-section.module h2 {
-    font-family: Crimson Text;
-    font-size: 30px;
-    color: #55ADAD;
-    text-shadow: 1px 1px 1px black;
-}
 
 section.module p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
 section.module.content {
-    background-color: #2A2A2A;
-    height: 20vh;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-bottom: 1.5%;
-    box-shadow: inset 0 0 5em black;
+  background-color: #2A2A2A;
+  height: 20vh;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-bottom: 1.5%;
+	box-shadow: inset 0 0 5em black;
 }
-
 section.module.parallax {
-    margin-top: 0px;
-    height: 80vh;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin-top: 0px;
+  height: 80vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 section.module.parallax h1 {
-    color: white;
-    text-shadow: 0.05em 0.05em 0.04em black;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: Renault;
-    margin-top: 11%;
+	color: white;
+	text-shadow: 0.05em 0.05em 0.04em black;
+	text-transform: uppercase;
+  text-align: center;
+	font-family: Renault;
+	margin-top: 11%;
 }
-
 section.module.parallax-1 {
     background-image: url("../images/Optimized-Denver.jpeg");
 }
-
 section.module.parallax-2 {
-    background-image: url("../images/Optimized-Capitol.jpeg");
+  background-image: url("../images/Optimized-Capitol.jpeg");
 }
-
 section.module.parallax-3 {
-    background-image: url("../images/Optimized-Mountain.jpg");
-}
 
+  background-image: url("../images/Optimized-Mountain.jpg");
+}
 section.module.parallax-4 {
-    background-image: url("../images/Optimized-Rave.jpeg");
+  background-image: url("../images/Optimized-Rave.jpeg");
 }
 
 @media all and (min-width: 600px) {
-    section.module h2 {
-        font-family: PT Sans narrow;
-        font-size: 42px;
-    }
-    section.module p {
-        font-size: 1.8em;
-        font family: PT Sans narrow;
-    }
-    section.module.parallax h1 {
-        font-size: 5em;
-    }
+  section.module h2 {
+
+		font-family: PT Sans narrow;
+
+
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 1.3em;
+
+		font family: PT Sans narrow;
+  }
+  section.module.parallax h1 {
+    font-size: 5em;
+  }
 }
 
 .first-title {
-    width: 100%;
-    margin-left: 3%;
-    text-shadow: 0.05em 0.05em 0.04em black;
-    width: 100vw;
-    margin-bottom: 7%;
-    font family: PT Sans narrow;
-}
+	width: 100%;
+	margin-left: 3%;
+	text-shadow: 0.05em 0.05em 0.04em black;
+	width: 100vw;
+	margin-bottom: 7%;
+	font family: PT Sans narrow;
+  }
 
-section.module.parallax h1 {
+  section.module.parallax h1 {
     font-size: 6em;
-    font-family: Crimson Text;
-}
+		font-family: Crimson Text;
+  }
+
 
 #logo-container {
-    margin-top: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 10vh;
-    /*background-color: black;*/
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  /*background-color: black;*/
 }
 
 img {
-    width: 2em;
-    height: 2em;
-    box-shadow: 1px 1px 1px black;
+	width: 2em;
+	height: 2em;
+	box-shadow: 1px 1px 1px black;
+
 }
 
 .link-hold {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000B12;
-    padding: 0.5%;
-    border-radius: 3%;
-    border: 1px solid #000B12;
-    width: 12vw;
-    box-shadow: 3px 3px 2px black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000B12;
+	padding: 0.5%;
+	padding-top: 0.6%;
+	padding-left: 1%;
+	border-radius: 3%;
+	border: 1px solid #000B12;
+	width: 12vw;
+	box-shadow: 3px 3px 2px black;
 }
 
-.link-hold:hover {
-    background-color: white;
+.link-hold:hover{
+	background-color: white;
 }
 
 .button-label {
-    text-align: center;
-    align-self: center;
-    font-size: 1.3em !important;
-    text-align: left;
-    background: none;
-    color: #55ADAD !important;
+	text-align: center;
+	align-self: center;
+	font-size: 1em !important;
+	text-align: left;
+	background: none;
+	color: #55ADAD !important;
 }
 
 #btn-label {
-    color: #55ADAD;
+	color: #55ADAD;
+	font-size: 1em !important;
 }
 
 .linkButton {
-    width: 11vw;
-    background: none;
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    padding: 1%;
+	width: 11vw;
+	background: none;
+	margin: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	padding: 1%;
 }
 
 .blurb {
-    font-family: PT Sans Narrow !important;
-    color: #C7CAC9 !important;
-    margin-top: 3%;
+	font-family: PT Sans Narrow !important;
+	color: #C7CAC9 !important;
+	margin-top: 3%;
 }
 
 .find {
-    margin-bottom: 50%;
-    text-shadow: 3px 3px 3px black !important;
+	margin-bottom: 50%;
+	text-shadow: 3px 3px 3px black !important;
 }
 
 .just-shadow {
-    position: absolute;
-    top: 29.7%;
-    right: 22.7%;
-    text-shadow: 4px 4px 2px black !important;
+	position: absolute;
+	top: 29.7%;
+	right: 22.7%;
+	text-shadow: 4px 4px 2px black !important;
 }
 
 #content3 {
-    padding-bottom: 2%;
+	padding-bottom: 2%;
 }
 
 ::-webkit-input-placeholder {
-    color: #000B12;
+	color: #000B12;
 }
 
 .multi-input {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .signUpButton {
-    background-color: #000B12;
-    position: absolute;
-    bottom: -278%;
-    right: 42.6%;
-    font-family: Crimson Text;
-    width: 15vw;
-    height: 7vh;
-    border: none;
-    font-size: 2em;
-    color: rgba(85, 173, 173, 0.8);
+	background-color: #000B12;
+	position: absolute;
+	bottom: -278%;
+	right: 42.6%;
+	font-family: Crimson Text;
+	width: 15vw;
+	height: 7vh;
+	border: none;
+	font-size: 2em;
+	color: rgba(85, 173, 173, 0.8);
 }
 
 .signUpButton:hover {
-    background-color: white;
+	background-color: white;
 }
 
 .button-p {
-    border: 1px solid #55ADAD;
-    font-size: 1em !important;
+	border: 1px solid #55ADAD;
+	font-size: 1em !important;
 }
 
 .title-hold {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 16%;
 }
 
 #guest-button {
     margin-top: 2%;
     display: flex;
     justify-content: center;
-    display: flex;
     height: 3.7vh;
-    cursor: pointer;
-    cursor: hand;
-}
-
-#guest-button:hover {
-    cursor: pointer;
-    cursor: hand;
 }
 
 #link-button.button-label {
-    margin: auto;
-    cursor: pointer;
-    cursor: hand;
+	margin: auto;
 }
