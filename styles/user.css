@@ -15,6 +15,10 @@ body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+p {
+    font-family: PT Sans Narrow;
+}
+
 .img-portfolio {
     margin-bottom: 30px;
 }
@@ -99,6 +103,10 @@ footer {
 .selected {
     background-color: #49515a !important;
 }
+#details {
+    width: 60vw;
+    height: 70vh;
+}
 
 /* Responsive Styles */
 
@@ -117,4 +125,16 @@ footer {
     header.carousel .carousel {
         height: 70%;
     }
+}
+
+#details-header {
+    font-family: Crimson Text;
+    color: #55ADAD;
+    text-align: center;
+    margin-right: 4%;
+}
+#details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }

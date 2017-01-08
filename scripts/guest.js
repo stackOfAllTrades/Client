@@ -52,24 +52,24 @@ $(document).ready(function() {
         })
 
 
-    $('#subButton').click(function() {
-
-        for (var i = 0; i < eventArray.length; i++) {
-
-            var thisEvent = eventArray[i];
-            thisEvent = normalizeData(thisEvent);
-
-            var $id = $('<p class="hidden">' + i + '</p>');
-            var $card = $('<div class="panel panel-default" + id="card' + (i + 1) + '"></div>');
-            if (i === 0) {
-                $card.attr('id', 'card1');
-            }
-
-            var $heading = $('<div class="panel-heading"><h3 class="panel-title">' + thisEvent.event_name + '</h3></div>');
-            var $body = $('<div class="panel-body"">' + thisEvent.date + ' at ' + thisEvent.time + '</div>');
-            $($card).append($id);
-            $($card).append($heading);
-            $($card).append($body);
+    // $('#subButton').click(function() {
+    //
+    //     for (var i = 0; i < eventArray.length; i++) {
+    //
+    //         var thisEvent = eventArray[i];
+    //         thisEvent = normalizeData(thisEvent);
+    //
+    //         var $id = $('<p class="hidden">' + i + '</p>');
+    //         var $card = $('<div class="panel panel-default" + id="card' + (i + 1) + '"></div>');
+    //         if (i === 0) {
+    //             $card.attr('id', 'card1');
+    //         }
+    //
+    //         var $heading = $('<div class="panel-heading"><h3 class="panel-title">' + thisEvent.event_name + '</h3></div>');
+    //         var $body = $('<div class="panel-body"">' + thisEvent.date + ' at ' + thisEvent.time + '</div>');
+    //         $($card).append($id);
+    //         $($card).append($heading);
+    //         $($card).append($body);
 
 
             $('.panel').click(function() {
@@ -105,7 +105,7 @@ $(document).ready(function() {
             });
             // });
 
-        }
+        // }
 
     });
 });
@@ -164,6 +164,8 @@ function populateEvent(thisEvent, i) {
     $($card).append($body);
 
     $('#listOne').append($card);
+
+
 
 }
 

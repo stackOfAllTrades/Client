@@ -39,6 +39,9 @@
              populateEvents(cleanEventArray)
          })
          .then((data) => {
+             if(window.location.hash !== ""){
+                 window.location.href = window.location.hash;
+             }
              let imageData = globalEventArray;
              populateImages(imageData);
          })
@@ -46,7 +49,7 @@
              console.log(error);
              console.log(error.status);
              //  if (res.status === 500) {
-              // alert("Sorry... our bad. Reloading the page.");
+             // alert("Sorry... our bad. Reloading the page.");
              //  window.location.reload();
              //  }
          });
@@ -135,6 +138,70 @@
 
 
  function createEventsEventHandler(eventID) {
+     const $thisCardBtn = $(`#card-btn-${eventID}`);
+     $thisCardBtn.click(() => {
+         populateEventDetail(eventID);
+     })
+ }
+
+ function populateEventDetail(id) {
+     //  console.log(id);
+     //  console.log(globalEventArray);
+     let $source = null;
+     let $name = null;
+     let $address = null;
+     let $date = null;
+     let $description = null;
+     let $link = null;
+     let $image = null;
+     let $location = null;
+     let $price = null;
+     let $time = null;
+     globalEventArray.forEach((event, index) => {
+         const thisEvent = globalEventArray[index];
+         if (id === thisEvent.id) {
+             $(`#parent-container`).empty();
+             $(`#category-container`).empty();
+             $(`#category-title`).css("display", "none");
+             $details = $(`<div id="details" class="container"></div>`);
+             $source = $(`<p>${thisEvent.source_name}</p>`);
+             $name = $(`<h2 id="details-header">${thisEvent.event_name}</h2>`);
+             $address = $(`<p>${thisEvent.address}</p>`);
+             $date = $(`<p>${thisEvent.date}</p>`);
+             $description = $(`<p>${thisEvent.description}</p>`);
+             $link = $(`<a href="${thisEvent.event_link}">Link for Event Original Posting</a>`);
+             const thisImageLink = thisEvent.image_link;
+             $image = $(`<img src="${thisImageLink}">`);
+             $location = $(`<p>${thisEvent.location}</p>`);
+             $price = $(`<p>${thisEvent.price}</p>`);
+             $time = $(`<p>${thisEvent.time}</p>`);
+             $('#parent-container').append($details);
+             $($details).append($name);
+             $($details).append($source);
+             $($details).append($description);
+             $($details).append($address);
+             $($details).append($date);
+             $($details).append($link);
+             if (thisEvent.image_link !== null) {
+                 $($details).append($image);
+             }
+             $($details).append($time);
+             $($details).append($location);
+             $($details).append($price);
+             $($details).append(`<button class="btn btn-danger" id="back-btn">Back to List</button>`);
+             $(`#back-btn`).on('click', function (){
+                window.location.reload();
+                window.location.href = `#card-div-${event.id}`;
+
+
+                // $(`#category-title`).css("display", "flex");
+             })
+
+
+
+
+         }
+     })
 
  }
 
@@ -153,13 +220,17 @@
 
  function populateCategories(categoryArray) {
      categoryArray.forEach((category) => {
-         const $parent = $('.category-container');
-         const source = $(`#category-template`).html();
-         const template = Handlebars.compile(source);
-         const html = template(category);
-         $parent.append(html);
+         populateCategory(category);
          createCategoriesEventHandler(category.id);
      });
+ }
+
+ function populateCategory(category){
+     const $parent = $('.category-container');
+     const source = $(`#category-template`).html();
+     const template = Handlebars.compile(source);
+     const html = template(category);
+     $parent.append(html);
  }
 
  function createCategoriesEventHandler(categoryID) {

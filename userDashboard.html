@@ -103,14 +103,14 @@
                 <h2 class="page-header">Users Current Events</h2>
             </div>
             <div class="col-md-3">
-                <h3>Filter By</h3>
-                <div class="list-group category-container">
+                <h3 id="category-title">Filter By</h3>
+                <div class="list-group category-container" id="category-container">
                     <div class="list-group-item category-all selected">All Events</div>
 
                     <!-- Categories will populate here -->
                 </div>
             </div>
-            <div class="card-container">
+            <div class="card-container" id="parent-container">
                 <!-- Event cards will populate here -->
             </div>
 
@@ -125,7 +125,7 @@
                     <h4>Time: {{time}}</h4>
                     <!-- <h4>Address: {{address}}</h4> -->
                     <p class="collapse">{{description}}</p>
-                    <p><a class="btn" href="#">View details »</a></p>
+                    <p><a class="btn" id ="card-btn-{{id}}" href="#">View details »</a></p>
                     <!-- <button id="card-button-{{id}}">{{categories}}</button> -->
                 </div>
             </script>
@@ -137,10 +137,6 @@
             <script id="welcome-template" type="text/x-handlebars-template">
                 <h1 class="page-header">Welcome {{first_name}} {{last_name}}</h1>
             </script>
-
-
-
-            <hr>
 
 
 
