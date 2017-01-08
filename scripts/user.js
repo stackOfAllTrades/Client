@@ -58,7 +58,7 @@
  });
 
  function getEvents() {
-     let data = $.get(`${URL}/events`);
+     let data = $.get(`${URL}/userDashboard`);
      return data;
  }
 
