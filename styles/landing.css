@@ -31,22 +31,20 @@ section.module h2 {
   font-family: Crimson Text;
   font-size: 30px;
 	color: #55ADAD;
+	text-shadow: 1px 1px 1px black;
 }
 
-section.module p {
-  color: white;
-  font-family: Crimson Text;
-	color: #55ADAD;
-}
+
 section.module p:last-child {
   margin-bottom: 0;
 }
 section.module.content {
-  background-color: #000B12;
+  background-color: #2A2A2A;
   height: 20vh;
 	padding-left: 4%;
 	padding-right: 4%;
 	padding-bottom: 1.5%;
+	box-shadow: inset 0 0 5em black;
 }
 section.module.parallax {
   margin-top: 0px;
@@ -62,26 +60,25 @@ section.module.parallax {
 }
 section.module.parallax h1 {
 	color: white;
-	text-shadow: 1em 1em 0.04em black;
-  font-size: 3vh;
+	text-shadow: 0.05em 0.05em 0.04em black;
 	text-transform: uppercase;
   text-align: center;
 	font-family: Renault;
-	margin-top: 9.7%;
+	margin-top: 11%;
 }
 section.module.parallax-1 {
 	padding-right: 1.5%;
-  background-image: url("../images/Denver.jpeg");
+  background-image: url("../images/Optimized-Denver.jpeg");
 }
 section.module.parallax-2 {
-  background-image: url("../images/Capitol.jpeg");
+  background-image: url("../images/Optimized-Capitol.jpeg");
 }
 section.module.parallax-3 {
 
-  background-image: url("../images/Mountain.jpg");
+  background-image: url("../images/Optimized-Mountain.jpg");
 }
 section.module.parallax-4 {
-  background-image: url("../images/Rave.jpeg");
+  background-image: url("../images/Optimized-Rave.jpeg");
 }
 
 @media all and (min-width: 600px) {
@@ -93,7 +90,7 @@ section.module.parallax-4 {
     font-size: 42px;
   }
   section.module p {
-    font-size: 20px;
+    font-size: 1.8em;
 
 		font family: PT Sans narrow;
   }
@@ -102,6 +99,11 @@ section.module.parallax-4 {
   }
 }
 
+.first-title {
+	width: 100%;
+	margin-left: 3%;
+	margin-top: 9d% !important;
+	text-shadow: 0.05em 0.05em 0.04em black;
 
 		font family: PT Sans narrow;
 
@@ -129,6 +131,7 @@ img {
 	width: 2em;
 	height: 2em;
 	box-shadow: 1px 1px 1px black;
+
 }
 
 .link-hold {
@@ -142,7 +145,7 @@ img {
 	padding-left: 1%;
 	border-radius: 3%;
 	border: 1px solid #000B12;
-	width: 24vw;
+	width: 12vw;
 	box-shadow: 3px 3px 2px black;
 }
 
@@ -153,12 +156,18 @@ img {
 .button-label {
 	text-align: center;
 	align-self: center;
-	font-size: 0.2em;
-	margin-right: 9.9vw;
+	font-size: 1.3em !important;
+	text-align: left;
 	background: none;
+	color: #55ADAD !important;
+}
+
+#btn-label {
+	color: #55ADAD;
 }
 
 .linkButton {
+	width: 11vw;
 	background: none;
 	margin: 0px;
 	display: flex;
@@ -166,7 +175,6 @@ img {
 	justify-content: space-between;
 	align-items: center;
 	text-decoration: none;
-	border: 1px solid #55ADAD;
 	padding: 1%;
 }
 
@@ -233,10 +241,6 @@ input {
 	border: none;
 	font-size: 2em;
 	color: rgba(85, 173, 173, 0.8);
-}
-
-#join {
-	margin-bottom: 200%;
 }
 
 .signUpButton:hover {
