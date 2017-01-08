@@ -38,9 +38,9 @@ $(document).ready(function() {
 
             eventArray = data;
             eventArray = normalizeArray(eventArray);
-            console.log(eventArray);
+            console.log(eventArray.length);
             eventArray = filterPastEvents(eventArray);
-            console.log(eventArray);
+            console.log(eventArray.length);
             for (var i = 0; i < eventArray.length; i++) {
                 var thisEvent = eventArray[i];
                 populateEvent(thisEvent, i);
@@ -208,27 +208,27 @@ function normalizeData(event) {
         event.description = "Description Unavailable"
     }
 
-    // let date = null;
-    // let possibleDate = null;
-    // if (event.date) {
-    //     try {
-    //         diff = Sugar.Date('today').hoursUntil(event.date).raw;
-    //         if (diff >= 0) {
-    //             possibleDate = Sugar.Date(event.date).format('{Dow}, {Month} {dd}, {yyyy}').raw;
-    //             event.isValid = true;
-    //         } else {
-    //             possibleDate = event.date;
-    //             event.isValid = false;
-    //         }
-    //     } catch (err) {
-    //         possibleDate = event.date;
-    //         event.isValid = false;
-    //     }
-    //     event.date = possibleDate;
-    // } else {
-    //     event.isValid = false;
-    // }
-    event.isValid = true;
+    let date = null;
+    let possibleDate = null;
+    if (event.date) {
+        try {
+            diff = Sugar.Date('today').hoursUntil(event.date).raw;
+            if (diff >= 0) {
+                // possibleDate = Sugar.Date(event.date).format('{Dow}, {Month} {dd}, {yyyy}').raw;
+                possibleDate = event.date;
+                event.isValid = true;
+            } else {
+                possibleDate = event.date;
+                event.isValid = false;
+            }
+        } catch (err) {
+            possibleDate = event.date;
+            event.isValid = false;
+        }
+        event.date = possibleDate;
+    } else {
+        event.isValid = false;
+    }
 
     if (!event.time) {
         event.time = "TBD";
