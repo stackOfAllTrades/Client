@@ -22,7 +22,6 @@
 
      getEvents()
          .then((eventArray) => {
-           console.log(eventArray.length);
              return sortEvents(eventArray);
          })
          .then((sortedEventArray) => {
@@ -37,7 +36,6 @@
          })
          .then((cleanEventArray) => {
              globalEventArray = cleanEventArray;
-             console.log(globalEventArray.length);
              populateEvents(cleanEventArray)
          })
          .then((data) => {
@@ -48,7 +46,7 @@
              console.log(error);
              console.log(error.status);
              //  if (res.status === 500) {
-             //  alert("Sorry... our bad. Reloading the page.");
+              // alert("Sorry... our bad. Reloading the page.");
              //  window.location.reload();
              //  }
          });
