@@ -67,7 +67,6 @@ section.module.parallax h1 {
 	margin-top: 11%;
 }
 section.module.parallax-1 {
-	padding-right: 1.5%;
   background-image: url("../images/Optimized-Denver.jpeg");
 }
 section.module.parallax-2 {
@@ -102,10 +101,10 @@ section.module.parallax-4 {
 .first-title {
 	width: 100%;
 	margin-left: 3%;
-	margin-top: 11% !important;
 	text-shadow: 0.05em 0.05em 0.04em black;
 	width: 100vw;
-		font family: PT Sans narrow;
+	margin-bottom: 7%;
+	font family: PT Sans narrow;
 
   }
 
@@ -196,23 +195,9 @@ img {
 	text-shadow: 4px 4px 2px black !important;
 }
 
-.h1-hold {
-	margin-top: 4.2%;
-	margin-right: 7%;
-}
-
 #content3 {
 	padding-bottom: 2%;
 }
-
-form {
-	position: absolute;
-	right: 21%;
-	bottom: -270%;
-	display: flex;
-	flex-direction: row;
-}
-
 ::-webkit-input-placeholder {
 	color: #000B12;
 }
@@ -220,14 +205,6 @@ form {
 .multi-input {
 	display: flex;
 	flex-direction: column;
-}
-
-input {
-	background-color: rgba(85, 173, 173, 0.8);
-	border: 2px solid #55ADAD;
-	font-size: 1.5em;
-	margin: 0.5em;
-	box-shadow: 2px 2px 1px black;
 }
 
 .signUpButton {
@@ -255,15 +232,16 @@ input {
 .title-hold {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	margin-bottom: 16%;
 }
 
 #guest-button {
-	margin-top: 2%;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	height: 3.7vh;
+	margin-top: 2%;
 }
 
 #link-button.button-label {
