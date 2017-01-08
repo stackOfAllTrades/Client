@@ -5,8 +5,6 @@
  })
 
  function createGoogleButtonHandler() {
-     $loginButton = $("#login-button");
-     $loginButton.click(() => {
-       window.location.href = `${SERVER_URL}/auth/google`
-     })
+     $loginButton = $("#login-button-link");
+     $loginButton.attr('href', `${SERVER_URL}/auth/google`);
  }

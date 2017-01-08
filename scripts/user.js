@@ -36,13 +36,10 @@
          })
          .then((cleanEventArray) => {
              globalEventArray = cleanEventArray;
-             //  console.log(globalEventArray);
              populateEvents(cleanEventArray)
          })
          .then((data) => {
-             // console.log(globalEventArray);
              let imageData = globalEventArray;
-             // console.log(imageData);
              populateImages(imageData);
          })
          .catch((error) => {
@@ -77,7 +74,6 @@
          // a must be equal to b
          return 0;
      });
-     //  console.log(returnData);
      return returnData;
  }
 
@@ -107,7 +103,6 @@
              index = generateRandomIndex(imageData.length);
              thisEvent = imageData[index];
              image_link = thisEvent.image_link;
-             console.log(index);
              counter += 1;
          }
 
@@ -147,6 +142,7 @@
      $('#logout').click(() => {
          $.get(`${URL}/logout`);
      });
+     createCategoriesEventHandler("all");
  }
 
 
@@ -178,18 +174,26 @@
  }
 
  function filterCategories(categoryID) {
-     const categoryName = globalCategoryArray[categoryID - 1].name;
-     //  debugger;
+     let categoryName = null;
+
+     if (categoryID !== "all") {
+         categoryName = globalCategoryArray[categoryID - 1].name;
+     }
+
      globalEventArray.forEach((event) => {
          let shouldPopulate = false;
          const eventCategories = event.categories;
+         if (categoryID == "all") {
+             shouldPopulate = true;
+         } else {
+             eventCategories.forEach((category) => {
+                 if (categoryName == category) {
+                     shouldPopulate = true;
+                 }
+             })
+         }
 
-         eventCategories.forEach((category) => {
-             if (categoryName == category) {
-                 shouldPopulate = true;
-             }
-         })
-         if (shouldPopulate === true) {
+         if (shouldPopulate) {
              populateEvent(event);
          }
 
@@ -206,9 +210,7 @@
      const filteredEventArray = eventArray.filter((event) => {
          return event.isValid;
      });
-
      return filteredEventArray;
-
  }
 
  function normalizeData(event) {
@@ -230,8 +232,7 @@
      if (event.date) {
          try {
              diff = Sugar.Date('today').hoursUntil(event.date).raw;
-             //  diff = 12;
-             if (diff > 0) {
+             if (diff >= 0) {
                  possibleDate = Sugar.Date(event.date).format('{Dow}, {Month} {dd}, {yyyy}').raw;
                  event.isValid = true;
              } else {
@@ -243,7 +244,7 @@
          }
          event.date = possibleDate;
      } else {
-         date = "TBD";
+         event.isValid = false;
      }
 
      if (!event.time) {

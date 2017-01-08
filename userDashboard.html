@@ -32,23 +32,18 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
+                    <!-- <li>
+                        <a href="index.html">Home</a>
+                    </li> -->
+                    <!-- <li>
                         <a href="services.html">Services</a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a  href = "index.html" id="logout">Log Out</a>
+                        <a href="index.html" id="logout">Log Out</a>
                     </li>
-
-
-
                 </ul>
             </div>
-
         </div>
-
     </nav>
 
     <!-- Header Carousel -->
@@ -63,19 +58,19 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div id ="image-card-0" class="fill"></div>
+                <div id="image-card-0" class="fill"></div>
                 <div class="carousel-caption">
-                     <h2 id='caption-0'></h2>
+                    <h2 id='caption-0'></h2>
                 </div>
             </div>
             <div class="item">
-                <div id ="image-card-1"class="fill"></div>
+                <div id="image-card-1" class="fill"></div>
                 <div class="carousel-caption">
                     <h2 id='caption-1'></h2>
                 </div>
             </div>
             <div class="item">
-                <div id ="image-card-2"class="fill"></div>
+                <div id="image-card-2" class="fill"></div>
                 <div class="carousel-caption">
                     <h2 id='caption-2'></h2>
                 </div>
@@ -110,6 +105,8 @@
             <div class="col-md-3">
                 <h3>Filter By</h3>
                 <div class="list-group category-container">
+                    <div class="list-group-item category-all selected">All Events</div>
+
                     <!-- Categories will populate here -->
                 </div>
             </div>
@@ -138,7 +135,7 @@
             </script>
 
             <script id="welcome-template" type="text/x-handlebars-template">
-                <h1 class = "page-header">Welcome {{first_name}} {{last_name}}</h1>
+                <h1 class="page-header">Welcome {{first_name}} {{last_name}}</h1>
             </script>
 
 
