@@ -116,7 +116,6 @@
          const $thisH2 = $(`#caption-${j}`);
          $thisH2.text(`${thisEvent.event_name}`);
          $thisCarouselCard.css(`background-image`, `url(${image_link})`);
-         console.log(thisEvent.image_link);
 
      }
  }
