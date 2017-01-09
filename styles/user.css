@@ -194,3 +194,7 @@ p {
 #original-link {
   margin-top: 2%;
 }
+ .category-filter, #myCarousel {
+   cursor:pointer;
+   cursor:hand;
+ }

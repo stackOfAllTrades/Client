@@ -105,7 +105,7 @@
             <div class="col-md-3">
                 <h3 id="category-title">Filter By</h3>
                 <div class="list-group category-container" id="category-container">
-                    <div class="list-group-item category-all selected">All Events</div>
+                    <div class="list-group-item category-all selected category-filter">All Events</div>
 
                     <!-- Categories will populate here -->
                 </div>
@@ -131,7 +131,7 @@
             </script>
 
             <script id="category-template" type="text/x-handlebars-template">
-                <div class="list-group-item category-{{id}}">{{name}}</div>
+                <div class="list-group-item category-{{id}} category-filter">{{name}}</div>
             </script>
 
             <script id="welcome-template" type="text/x-handlebars-template">
