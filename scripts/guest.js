@@ -45,10 +45,10 @@ $(document).ready(function() {
             }
         })
         .catch((error) => {
-            if (res.status === 500) {
+            // if (res.status === 500) {
                 alert("Sorry... our bad. Reloading the page.");
                 window.location.reload();
-            }
+            // }
         })
 
 
