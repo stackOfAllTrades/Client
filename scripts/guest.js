@@ -44,9 +44,15 @@ $(document).ready(function() {
                 populateEvent(thisEvent, i);
             }
         })
-        .catch((error) => {
-            // alert("Sorry... our bad. Reloading the page.");
-            // window.location.reload();
+        .catch((errorResult) => {
+            console.log(errorResult);
+            console.log(errorResult.status);
+            //  if (res.status === 500) {
+
+            alert("Sorry, something went wrong. Reloading the page.");
+            window.location.reload();
+
+            //  }
         })
 
 
